@@ -550,9 +550,9 @@ const GRADES = [
           { prompt: "Một cửa hàng có 240 quả táo, chia đều vào 8 hộp. Mỗi hộp có bao nhiêu quả?", solution: "Số quả mỗi hộp = 240:8 = 30 quả.", answer: "30 quả" },
         ],
         advanced: [
-          { prompt: "Tính giá trị biểu thức: 2³×5 − 4×(15−3×4)", solution: "Trong ngoặc: 3×4=12, 15-12=3.\n4×3=12. 2³×5=8×5=40.\n40-12=28.", answer: "28" },
-          { prompt: "Tìm số tự nhiên x biết: (x−5)×3=27", solution: "x-5 = 27:3 = 9.\nx = 9+5 = 14.", answer: "14" },
-          { prompt: "Một số tự nhiên chia cho 7 dư 3, chia cho 5 dư 2. Tìm số nhỏ nhất thỏa mãn.", solution: "Số chia 7 dư 3: 3, 10, 17, 24, 32,...\nSố chia 5 dư 2: 2, 7, 12, 17, 22,...\nSố nhỏ nhất xuất hiện ở cả hai dãy: 17.", answer: "Số nhỏ nhất xuất hiện ở cả hai dãy: 17" },
+          { prompt: "Tìm số tự nhiên nhỏ nhất có tổng các chữ số bằng 20.", solution: "Với k chữ số, tổng các chữ số tối đa là 9k. Cần 9k≥20, mà 9×2=18<20 nên cần ít nhất k=3 chữ số.\nVới 3 chữ số, để số nhỏ nhất thì chữ số hàng trăm phải nhỏ nhất có thể, hai chữ số còn lại lớn nhất có thể (9 và 9, tổng 18).\nChữ số hàng trăm = 20-18 = 2.\nVậy số cần tìm là 299.", answer: "299" },
+          { prompt: "Không dùng máy tính, tính nhanh tổng: 1+2+3+...+100 bằng cách ghép cặp.", solution: "Ghép cặp đầu với cuối: (1+100), (2+99), (3+98), ..., (50+51).\nCó tất cả 50 cặp, mỗi cặp đều có tổng bằng 101.\nTổng = 50×101 = 5050.", answer: "5050" },
+          { prompt: "Tìm hai số tự nhiên biết tổng của chúng là 100 và nếu lấy số lớn chia cho số bé thì được thương là 3, dư 4.", solution: "Gọi số bé là b, số lớn là a = 3b+4 (theo phép chia có dư).\nTa có a+b=100, tức (3b+4)+b=100 → 4b=96 → b=24.\nSuy ra a=100-24=76.\nVậy hai số cần tìm là 24 và 76.", answer: "24 và 76" },
         ],
       },
       {
@@ -579,9 +579,9 @@ const GRADES = [
           { prompt: "Tính tổng: 1/2 + 1/4 + 1/8", solution: "Mẫu số chung là 8: 4/8+2/8+1/8 = 7/8.", answer: "7/8" },
         ],
         advanced: [
-          { prompt: "Tính: (2/3 + 1/6) : (5/6 − 1/3)", solution: "2/3+1/6 = 4/6+1/6 = 5/6.\n5/6-1/3 = 5/6-2/6 = 3/6 = 1/2.\n(5/6):(1/2) = 5/6×2 = 10/6 = 5/3.", answer: "5/3" },
-          { prompt: "Một lớp có 3/5 số học sinh là nam, còn lại là nữ. Nếu có 8 học sinh nữ, lớp có bao nhiêu học sinh?", solution: "Tỉ lệ nữ = 1-3/5 = 2/5 tổng số học sinh.\n2/5 × tổng = 8 → tổng = 8×5/2 = 20 học sinh.", answer: "20 học sinh" },
-          { prompt: "Tính tổng: 1/(1×2) + 1/(2×3) + 1/(3×4) (gợi ý: 1/(n×(n+1)) = 1/n − 1/(n+1))", solution: "= (1-1/2)+(1/2-1/3)+(1/3-1/4) = 1-1/4 = 3/4 (các số hạng giữa triệt tiêu nhau).", answer: "3/4 (các số hạng giữa triệt tiêu nhau)" },
+          { prompt: "Tính nhanh: 1/2 + 1/6 + 1/12 + 1/20 + 1/30 (gợi ý: mỗi số hạng có dạng 1/(n×(n+1))).", solution: "1/2=1/(1×2), 1/6=1/(2×3), 1/12=1/(3×4), 1/20=1/(4×5), 1/30=1/(5×6).\nÁp dụng 1/(n×(n+1))=1/n−1/(n+1), các số hạng giữa triệt tiêu nhau:\n(1-1/2)+(1/2-1/3)+(1/3-1/4)+(1/4-1/5)+(1/5-1/6) = 1-1/6 = 5/6.", answer: "5/6" },
+          { prompt: "Một số quyển sách chia cho 3 bạn: bạn thứ nhất lấy 1/3 số sách, bạn thứ hai lấy 1/4 số còn lại, bạn thứ ba lấy 5 quyển thì vừa hết. Hỏi ban đầu có bao nhiêu quyển sách?", solution: "Sau khi bạn 1 lấy 1/3, còn lại 2/3 tổng số sách.\nBạn 2 lấy 1/4 của số còn lại, tức 1/4×2/3=1/6 tổng số sách, nên còn lại 2/3-1/6=1/2 tổng số sách.\nBạn 3 lấy 5 quyển vừa hết, nghĩa là 1/2 tổng số sách = 5 quyển.\nVậy tổng số sách ban đầu = 10 quyển.", answer: "10 quyển" },
+          { prompt: "So sánh hai phân số 17/35 và 19/41 mà không quy đồng trực tiếp (gợi ý: so sánh khoảng cách của mỗi phân số tới 1/2).", solution: "1/2 − 17/35 = (35-34)/70 = 1/70.\n1/2 − 19/41 = (41-38)/82 = 3/82.\nSo sánh 1/70 và 3/82: 1×82=82 và 3×70=210. Vì 82<210 nên 1/70<3/82.\nNghĩa là 17/35 gần 1/2 hơn 19/41, mà cả hai đều nhỏ hơn 1/2, nên phân số nào gần 1/2 hơn thì lớn hơn.\nVậy 17/35 > 19/41.", answer: "17/35 > 19/41" },
         ],
       },
       {
@@ -608,9 +608,9 @@ const GRADES = [
           { prompt: "Một đội có 18 nam, 24 nữ, muốn chia thành các nhóm bằng nhau, mỗi nhóm có cả nam và nữ. Hỏi chia được nhiều nhất bao nhiêu nhóm?", solution: "Số nhóm nhiều nhất = ƯCLN(18,24) = 6 nhóm.", answer: "6 nhóm" },
         ],
         advanced: [
-          { prompt: "Tìm số tự nhiên nhỏ nhất có 3 chữ số chia hết cho cả 3 và 5.", solution: "Chia hết cho cả 3 và 5 nghĩa là chia hết cho 15.\nSố có 3 chữ số nhỏ nhất chia hết cho 15: 100:15≈6,67, lấy 7×15=105.", answer: "105" },
-          { prompt: "Chứng tỏ tổng của 3 số tự nhiên liên tiếp luôn chia hết cho 3.", solution: "Gọi 3 số liên tiếp là n, n+1, n+2.\nTổng = n+(n+1)+(n+2) = 3n+3 = 3(n+1), luôn chia hết cho 3.", answer: "3(n+1), luôn chia hết cho 3" },
-          { prompt: "Tìm ƯCLN và BCNN của 3 số 12, 18, 24.", solution: "12=2²×3, 18=2×3², 24=2³×3.\nƯCLN = 2×3 = 6.\nBCNN = 2³×3² = 72.", answer: "72" },
+          { prompt: "Tìm số tự nhiên nhỏ nhất khác 0 chia hết cho tất cả các số từ 1 đến 10.", solution: "Đây chính là BCNN(1,2,...,10). Phân tích ra thừa số nguyên tố cần lấy: 2³ (từ số 8), 3² (từ số 9), 5 (từ số 5 hoặc 10), 7 (từ số 7).\nBCNN = 8×9×5×7 = 2520.", answer: "2520" },
+          { prompt: "Chứng tỏ tổng của 5 số tự nhiên liên tiếp luôn chia hết cho 5.", solution: "Gọi 5 số tự nhiên liên tiếp là n, n+1, n+2, n+3, n+4.\nTổng = n+(n+1)+(n+2)+(n+3)+(n+4) = 5n+10 = 5(n+2), luôn chia hết cho 5 với mọi n.", answer: "5(n+2), luôn chia hết cho 5" },
+          { prompt: "Một số tự nhiên nhỏ hơn 100, khi chia cho 3 dư 2, khi chia cho 4 dư 3, khi chia cho 5 dư 4. Tìm số đó.", solution: "Nhận xét: nếu gọi số cần tìm là x thì x+1 chia hết cho cả 3, 4 và 5 (vì dư luôn kém số chia đúng 1 đơn vị).\nBCNN(3,4,5) = 60, nên x+1=60 → x=59 (vì x<100 nên không xét x+1=120).\nKiểm tra: 59:3 dư 2 ✓, 59:4 dư 3 ✓, 59:5 dư 4 ✓.", answer: "59" },
         ],
       },
       {
@@ -637,9 +637,9 @@ const GRADES = [
           { prompt: "So sánh: (−5)+3 và (−2)", solution: "(-5)+3 = -2. Vậy hai giá trị này bằng nhau.", answer: "-2. Vậy hai giá trị này bằng nhau" },
         ],
         advanced: [
-          { prompt: "Tính: (−3)×(−4) + (−15):3 − 2²", solution: "(-3)×(-4)=12. (-15):3=-5. 2²=4.\n12-5-4 = 3.", answer: "3" },
-          { prompt: "Tìm x nguyên biết: |x+3| = 5", solution: "x+3=5 → x=2, hoặc x+3=-5 → x=-8.\nVậy x=2 hoặc x=-8.", answer: "-8" },
-          { prompt: "Sắp xếp theo thứ tự tăng dần: −|−5|, |−3|, −(−2), −4", solution: "-|-5|=-5. |-3|=3. -(-2)=2. -4 giữ nguyên.\nCác giá trị: -5, 3, 2, -4. Sắp tăng dần: -5, -4, 2, 3.", answer: "-5, -4, 2, 3" },
+          { prompt: "Tính tổng: (−1)+2+(−3)+4+...+(−99)+100 (100 số hạng, dấu xen kẽ).", solution: "Ghép cặp liên tiếp: (-1+2)+(-3+4)+...+(-99+100).\nCó 50 cặp, mỗi cặp đều bằng 1.\nTổng = 50×1 = 50.", answer: "50" },
+          { prompt: "Tìm tất cả số nguyên x thỏa mãn: |x−3| + |x+5| = 8 và −5≤x≤3.", solution: "Với -5≤x≤3: vì x≤3 nên |x-3|=3-x; vì x≥-5 nên |x+5|=x+5.\nTổng = (3-x)+(x+5) = 8, đúng với MỌI x trong khoảng này (x triệt tiêu).\nVậy mọi số nguyên x từ -5 đến 3 đều thỏa mãn: x∈{-5,-4,-3,-2,-1,0,1,2,3}.", answer: "x∈{-5,-4,-3,-2,-1,0,1,2,3}" },
+          { prompt: "Tích của 3 số nguyên là một số âm. Hỏi trong 3 số đó có thể có bao nhiêu số âm? (nêu đủ các trường hợp)", solution: "Tích của các số nguyên mang dấu âm khi số lượng thừa số âm là số LẺ.\nVới 3 số, số lẻ có thể là 1 hoặc 3.\nVậy có thể có 1 số âm (và 2 số dương), hoặc cả 3 số đều âm.", answer: "1 số âm hoặc 3 số âm" },
         ],
       },
       {
@@ -666,9 +666,9 @@ const GRADES = [
           { prompt: "Một xe đi được 45,5km trong 0,5 giờ. Tính vận tốc trung bình (km/h).", solution: "Vận tốc = quãng đường : thời gian = 45,5:0,5 = 91km/h.", answer: "91km/h" },
         ],
         advanced: [
-          { prompt: "Tính: 3,6×2,5 − 1,5:0,5", solution: "3,6×2,5 = 9. 1,5:0,5 = 3.\n9-3 = 6.", answer: "6" },
-          { prompt: "Một cửa hàng lãi 15% trên giá vốn. Biết giá vốn 1 món hàng là 400.000đ. Tính giá bán.", solution: "Tiền lãi = 400.000×0,15 = 60.000đ.\nGiá bán = 400.000+60.000 = 460.000đ.", answer: "460.000đ" },
-          { prompt: "So sánh 2/5 và 0,39.", solution: "Đổi 2/5 = 0,4. Vì 0,4 > 0,39 nên 2/5 > 0,39.", answer: "0,4. Vì 0,4 > 0,39 nên 2/5 > 0,39" },
+          { prompt: "Tìm số thập phân x biết: x + 2x + 3x = 24,6", solution: "Gộp các số hạng: x+2x+3x = 6x.\n6x = 24,6 → x = 4,1.", answer: "4,1" },
+          { prompt: "Không quy đồng, tính nhanh: 34,5×2025 − 34,5×2024", solution: "Đặt thừa số chung: 34,5×2025 − 34,5×2024 = 34,5×(2025−2024) = 34,5×1 = 34,5.", answer: "34,5" },
+          { prompt: "Tìm số thập phân có 2 chữ số ở phần thập phân, biết khi xóa dấu phẩy thì số mới hơn số cũ đúng 19,8.", solution: "Gọi số cần tìm là x. Vì có 2 chữ số thập phân, xóa dấu phẩy tương đương với việc nhân x với 100.\nTheo đề: 100x − x = 19,8 → 99x = 19,8 → x = 0,2.\nKiểm tra: viết đủ 2 chữ số thập phân là 0,20; xóa dấu phẩy được 20; 20−0,2=19,8 ✓.", answer: "0,2" },
         ],
       },
       {
@@ -695,9 +695,9 @@ const GRADES = [
           { prompt: "Một góc bằng 1/3 góc vuông. Tính số đo góc đó.", solution: "Số đo góc = 90°/3 = 30°.", answer: "30°" },
         ],
         advanced: [
-          { prompt: "Cho 4 điểm A, B, C, D trong đó không có 3 điểm nào thẳng hàng. Có thể vẽ được bao nhiêu đường thẳng đi qua 2 trong 4 điểm đó?", solution: "Mỗi cặp điểm cho một đường thẳng, số cặp trong 4 điểm là C(4,2) = (4×3)/2 = 6 đường thẳng.", answer: "6 đường thẳng" },
-          { prompt: "Cho góc AOB=90°, tia OC nằm trong góc sao cho góc AOC = 1/2 góc COB. Tính góc AOC và góc COB.", solution: "AOC+COB=90°. Vì COB=2×AOC: AOC+2AOC=90° → 3AOC=90° → AOC=30°.\nCOB = 2×30° = 60°.", answer: "60°" },
-          { prompt: "Đoạn thẳng AB=18cm. Trên AB lấy M, N sao cho AM=6cm, AN=12cm. Tính MN và cho biết N có là trung điểm của đoạn nào không.", solution: "MN = AN-AM = 12-6 = 6cm.\nNB = AB-AN = 18-12 = 6cm.\nVì MN=NB=6cm, N là trung điểm của đoạn MB.", answer: "6cm, N là trung điểm của đoạn MB" },
+          { prompt: "Cho 5 điểm nằm trên một đường thẳng. Hỏi có bao nhiêu đoạn thẳng được tạo thành từ các cặp điểm đó?", solution: "Mỗi cặp trong 5 điểm tạo thành một đoạn thẳng khác nhau, số cặp là C(5,2) = (5×4)/2 = 10.", answer: "10" },
+          { prompt: "Trên tia Ox lấy các điểm A, B, C sao cho OA=3cm, OB=7cm, OC=12cm. Tính AB, BC và so sánh AB+BC với AC.", solution: "Vì A,B,C cùng nằm trên tia Ox theo thứ tự xa dần gốc O nên: AB=OB-OA=7-3=4cm. BC=OC-OB=12-7=5cm. AC=OC-OA=12-3=9cm.\nAB+BC=4+5=9=AC. Vậy AB+BC=AC (vì B nằm giữa A và C).", answer: "AB=4cm, BC=5cm, AB+BC=AC=9cm" },
+          { prompt: "Cho góc bẹt xOy. Vẽ 3 tia Oa, Ob, Oc nằm trong góc đó sao cho chia góc bẹt thành 4 góc bằng nhau. Tính góc xOb (Ob là tia thứ hai kể từ Ox).", solution: "Góc bẹt có số đo 180°. Chia thành 4 góc bằng nhau: mỗi góc = 180°:4 = 45°.\nGóc xOb gồm 2 góc nhỏ liên tiếp kể từ Ox: xOb = 2×45° = 90°.", answer: "90°" },
         ],
       },
       {
@@ -724,9 +724,9 @@ const GRADES = [
           { prompt: "Trong 50 lần quay 1 vòng quay may mắn có 4 phần bằng nhau, có 11 lần trúng phần \"Quà tặng\". Tính xác suất thực nghiệm trúng \"Quà tặng\".", solution: "Xác suất thực nghiệm = 11/50 = 0,22.", answer: "0,22" },
         ],
         advanced: [
-          { prompt: "Gieo 1 đồng xu 500 lần thấy 260 lần mặt sấp. Tính xác suất thực nghiệm ra mặt ngửa.", solution: "Số lần mặt ngửa = 500-260 = 240.\nXác suất thực nghiệm = 240/500 = 0,48.", answer: "0,48" },
-          { prompt: "Một hộp có tổng 50 viên bi gồm đỏ và xanh. Qua 100 lần rút có hoàn lại, có 65 lần được bi đỏ. Ước lượng số bi đỏ trong hộp.", solution: "Xác suất thực nghiệm bi đỏ ≈ 65/100 = 0,65.\nSố bi đỏ ước lượng = 50×0,65 ≈ 33 viên.", answer: "50×0,65 ≈ 33 viên" },
-          { prompt: "Một lớp 40 học sinh khảo sát 3 môn thể thao yêu thích, biểu đồ hình quạt: bóng đá 40%, cầu lông 35%, còn lại bơi. Tính số học sinh thích bơi.", solution: "Tỉ lệ thích bơi = 100%-40%-35% = 25%.\nSố học sinh = 40×25% = 10.", answer: "10" },
+          { prompt: "Gieo 1 đồng xu n lần thấy số lần ra mặt ngửa nhiều hơn số lần ra mặt sấp đúng 3 lần, tổng cộng có 37 lần gieo. Tính số lần ra mặt ngửa.", solution: "Gọi số lần ngửa là x, số lần sấp là y. Ta có x-y=3 và x+y=37.\nCộng hai phương trình: 2x=40 → x=20.", answer: "20" },
+          { prompt: "Một hộp có bi đỏ và bi xanh, tổng cộng 29 viên. Nếu lấy ra 1 bi đỏ thì số bi đỏ còn lại đúng bằng một nửa tổng số bi còn lại trong hộp. Tính số bi đỏ ban đầu.", solution: "Gọi số bi đỏ ban đầu là x. Sau khi lấy 1 bi đỏ, hộp còn 29-1=28 viên, trong đó có x-1 bi đỏ.\nTheo đề: x-1 = 28:2 = 14 → x=15.", answer: "15" },
+          { prompt: "Một lớp 40 học sinh, số bạn thích Toán nhiều hơn số bạn thích Văn là 8 bạn, có 12 bạn thích cả 2 môn, và mọi bạn đều thích ít nhất 1 trong 2 môn. Tính số bạn chỉ thích Toán.", solution: "Gọi số bạn thích Toán là T, thích Văn là V. Vì mọi bạn thích ít nhất 1 môn nên theo nguyên lý bù trừ: T+V-12=40 → T+V=52.\nMặt khác T-V=8. Cộng hai phương trình: 2T=60 → T=30.\nSố bạn chỉ thích Toán (không thích Văn) = T-12 = 30-12 = 18.", answer: "18" },
         ],
       },
       {
@@ -753,9 +753,9 @@ const GRADES = [
           { prompt: "Một hình chữ nhật có chiều dài gấp đôi chiều rộng, chu vi 36cm. Tính chiều dài và chiều rộng.", solution: "Gọi chiều rộng là x, chiều dài là 2x.\nChu vi = 2×(x+2x) = 6x = 36 → x=6.\nVậy chiều rộng=6cm, chiều dài=12cm.", answer: "12cm" },
         ],
         advanced: [
-          { prompt: "Một hình chữ nhật có chu vi 36cm, chiều dài hơn chiều rộng 6cm. Tính diện tích.", solution: "Nửa chu vi = 18cm, nên dài+rộng=18. Mặt khác dài-rộng=6.\nGiải ra: dài=12cm, rộng=6cm.\nDiện tích = 12×6 = 72cm².", answer: "72cm²" },
-          { prompt: "Một hình vuông và một hình chữ nhật có cùng chu vi 24cm. Hình chữ nhật có chiều dài 8cm. So sánh diện tích hai hình.", solution: "Hình vuông: cạnh=24/4=6cm, diện tích=36cm².\nHình chữ nhật: nửa chu vi=12cm, rộng=12-8=4cm, diện tích=8×4=32cm².\nVậy hình vuông có diện tích lớn hơn.", answer: "hình vuông có diện tích lớn hơn" },
-          { prompt: "Một mảnh đất hình thang có đáy lớn 20m, đáy nhỏ 12m, diện tích 128m². Tính chiều cao.", solution: "Chiều cao = diện tích×2 : (đáy lớn+đáy nhỏ) = 128×2/(20+12) = 256/32 = 8m.", answer: "8m" },
+          { prompt: "Một hình chữ nhật có chu vi 40cm. Nếu tăng chiều dài thêm 3cm và giảm chiều rộng đi 3cm thì diện tích tăng thêm 3cm². Tính chiều dài, chiều rộng ban đầu.", solution: "Gọi chiều dài là a, chiều rộng là b: a+b=20 (nửa chu vi).\nDiện tích mới: (a+3)(b-3) = ab+3b-3a-9.\nDiện tích tăng thêm 3: 3b-3a-9=3 → 3(b-a)=12 → b-a=4.\nKết hợp a+b=20 và b-a=4: b=12, a=8.", answer: "dài 8cm, rộng 12cm" },
+          { prompt: "Một mảnh đất hình vuông, nếu tăng cạnh thêm 2m thì diện tích tăng thêm 36m². Tính cạnh ban đầu.", solution: "Gọi cạnh ban đầu là x. Diện tích mới trừ diện tích cũ: (x+2)²-x² = 4x+4.\nTheo đề: 4x+4=36 → 4x=32 → x=8m.", answer: "8m" },
+          { prompt: "Chia một hình vuông cạnh 12cm thành các hình vuông nhỏ cạnh 1cm bằng nhau. Hỏi cần vẽ ít nhất bao nhiêu đường thẳng (cả ngang và dọc, không tính 4 cạnh hình vuông lớn)?", solution: "Để chia cạnh 12cm thành 12 phần bằng nhau, cần 11 đường thẳng song song với mỗi cạnh (không kể 2 cạnh biên).\nCần 11 đường ngang và 11 đường dọc.\nTổng cộng: 11+11 = 22 đường thẳng.", answer: "22" },
         ],
       },
       {
@@ -782,9 +782,9 @@ const GRADES = [
           { prompt: "Tam giác cân (không đều) có bao nhiêu trục đối xứng?", solution: "Có 1 trục đối xứng, chính là đường trung trực của cạnh đáy (cũng là đường phân giác của góc ở đỉnh).", answer: "1" },
         ],
         advanced: [
-          { prompt: "Trong các chữ cái H, O, A, S: chữ nào vừa có trục đối xứng vừa có tâm đối xứng?", solution: "Chữ H và O đều có cả trục đối xứng (ngang và dọc) và tâm đối xứng.\nChữ A chỉ có trục đối xứng dọc, không có tâm đối xứng.\nChữ S chỉ có tâm đối xứng, không có trục đối xứng.", answer: "Chữ S chỉ có tâm đối xứng, không có trục đối xứng" },
-          { prompt: "Một hình chữ nhật (không phải hình vuông) có tâm đối xứng không? Có bao nhiêu trục đối xứng?", solution: "Có tâm đối xứng, là giao điểm hai đường chéo.\nCó 2 trục đối xứng, là hai đường trung trực của các cặp cạnh.", answer: "2" },
-          { prompt: "Cho một ví dụ về hình có đúng 1 trục đối xứng nhưng không có tâm đối xứng.", solution: "Ví dụ: tam giác cân (không đều). Nó có đúng 1 trục đối xứng (đường trung trực cạnh đáy) nhưng không có tâm đối xứng.", answer: "1" },
+          { prompt: "Một đa giác đều có đúng 4 trục đối xứng và có tâm đối xứng. Hỏi đa giác đó có bao nhiêu cạnh?", solution: "Đa giác đều n cạnh luôn có đúng n trục đối xứng.\nCần n=4, nên đa giác đó là hình vuông, có 4 cạnh.", answer: "4 cạnh (hình vuông)" },
+          { prompt: "Xét chữ số 8 viết theo font chuẩn: nó có tâm đối xứng không? Có bao nhiêu trục đối xứng?", solution: "Chữ số 8 có 1 tâm đối xứng (điểm chính giữa) và có 2 trục đối xứng (một trục ngang, một trục dọc đi qua tâm).", answer: "Có tâm đối xứng; có 2 trục đối xứng" },
+          { prompt: "Ghép 2 tam giác đều bằng nhau theo một cạnh chung để được một hình mới. Hình mới có tâm đối xứng không? Vì sao?", solution: "Khi ghép 2 tam giác đều bằng nhau theo một cạnh chung, hình tạo thành là một hình thoi (4 cạnh bằng nhau).\nHình thoi luôn có tâm đối xứng — chính là giao điểm của hai đường chéo.\nVậy hình mới có tâm đối xứng.", answer: "Có, vì hình tạo thành là hình thoi và hình thoi luôn có tâm đối xứng" },
         ],
       },
     ],
@@ -820,9 +820,9 @@ const GRADES = [
           { prompt: "Tính: (−1)⁵ + (−1)⁴", solution: "(-1)⁵=-1, (-1)⁴=1.\n-1+1 = 0.", answer: "0" },
         ],
         advanced: [
-          { prompt: "Tính giá trị biểu thức: (−2/3)² − (1/2)³ + (−1)⁵", solution: "(-2/3)²=4/9. (1/2)³=1/8. (-1)⁵=-1.\nQuy đồng mẫu 72: 32/72-9/72-72/72 = (32-9-72)/72 = -49/72.", answer: "-49/72" },
-          { prompt: "Tìm x biết: (2/3)x − 1/2 = 5/6", solution: "(2/3)x = 5/6+1/2 = 5/6+3/6 = 8/6 = 4/3.\nx = (4/3):(2/3) = (4/3)×(3/2) = 2.", answer: "2" },
-          { prompt: "So sánh (−3/4)¹⁰⁰ và (−3/4)⁹⁹ (không cần tính giá trị cụ thể).", solution: "Vì -3/4 âm: lũy thừa với số mũ chẵn (100) cho kết quả dương, lũy thừa với số mũ lẻ (99) cho kết quả âm.\nVậy (-3/4)¹⁰⁰ > 0 > (-3/4)⁹⁹, nên (-3/4)¹⁰⁰ > (-3/4)⁹⁹.", answer: "-3/4" },
+          { prompt: "Tính nhanh: (1−1/2)×(1−1/3)×(1−1/4)×...×(1−1/10) (gợi ý: viết mỗi thừa số dưới dạng phân số rồi rút gọn dây chuyền).", solution: "Mỗi thừa số (1-1/k) = (k-1)/k. Tích trở thành: (1/2)×(2/3)×(3/4)×...×(9/10).\nRút gọn dây chuyền: tử của phân số sau bằng mẫu của phân số liền trước nên triệt tiêu hết, chỉ còn tử đầu tiên (1) và mẫu cuối cùng (10).\nKết quả = 1/10.", answer: "1/10" },
+          { prompt: "Tìm giá trị nhỏ nhất của biểu thức |x−1/2| + |x+1/3| và giá trị x đạt được (khoảng giá trị).", solution: "Biểu thức là tổng khoảng cách từ x đến 1/2 và từ x đến -1/3.\nTổng khoảng cách nhỏ nhất khi x nằm giữa hai điểm -1/3 và 1/2 (kể cả hai đầu mút), khi đó tổng bằng đúng khoảng cách giữa hai điểm: 1/2-(-1/3) = 5/6.\nVậy giá trị nhỏ nhất là 5/6, đạt được khi -1/3≤x≤1/2.", answer: "5/6" },
+          { prompt: "Biết x/3=y/5 và x−y=−8. Tìm x, y (dùng tính chất dãy tỉ số bằng nhau).", solution: "Áp dụng tính chất dãy tỉ số bằng nhau: x/3=y/5=(x-y)/(3-5)=(-8)/(-2)=4.\nVậy x=3×4=12, y=5×4=20.", answer: "x=12, y=20" },
         ],
       },
       {
@@ -849,9 +849,9 @@ const GRADES = [
           { prompt: "Tính √0,25", solution: "0,5² = 0,25, nên √0,25 = 0,5.", answer: "0,5" },
         ],
         advanced: [
-          { prompt: "Tính: √(16×25) − √(9×4)", solution: "√(16×25) = √400 = 20. √(9×4) = √36 = 6.\n20-6 = 14.", answer: "14" },
-          { prompt: "Giải thích ngắn gọn vì sao √2+√3 là số vô tỉ.", solution: "√2 và √3 đều là số vô tỉ. Tổng của chúng không có sự triệt tiêu phần vô tỉ nên không rút gọn được về số hữu tỉ. Vậy √2+√3 là số vô tỉ.", answer: "3" },
-          { prompt: "Ước lượng giá trị của √50 chính xác đến 1 chữ số thập phân.", solution: "7²=49<50<64=8², nên 7<√50<8.\nThử 7,1²=50,41 (hơi lớn), 7,07²≈49,98 (gần đúng).\nVậy √50 ≈ 7,1.", answer: "√50 ≈ 7,1" },
+          { prompt: "Tính: √(1+2+...+9+10+9+...+2+1) (gợi ý: biểu thức trong căn là tổng 1+2+...+10 rồi cộng ngược lại 9+8+...+1).", solution: "Tổng trong căn = (1+2+...+10) + (9+8+...+1) = 55+45 = 100 = 10².\nVậy √100 = 10.", answer: "10" },
+          { prompt: "So sánh (không dùng máy tính): √2+√3 và √10.", solution: "Bình phương hai vế (cả hai đều dương nên giữ nguyên chiều so sánh):\n(√2+√3)² = 2+3+2√6 = 5+2√6.\n(√10)² = 10.\nSo sánh 5+2√6 với 10, tức so sánh 2√6 với 5, tức so sánh √6 với 2,5, tức so sánh 6 với 6,25.\nVì 6<6,25 nên √6<2,5, suy ra 5+2√6<10.\nVậy √2+√3 < √10.", answer: "√2+√3 < √10" },
+          { prompt: "Tìm số nguyên n lớn nhất sao cho √n < 15.", solution: "Vì cả hai vế đều dương, bình phương giữ nguyên chiều bất đẳng thức: √n<15 ⟺ n<225.\nSố nguyên lớn nhất thỏa mãn n<225 là n=224.", answer: "224" },
         ],
       },
       {
@@ -878,9 +878,9 @@ const GRADES = [
           { prompt: "Cho hai đường thẳng song song bị cắt bởi một cát tuyến, một góc bằng 55°. Tính góc kề bù với nó.", solution: "Hai góc kề bù có tổng 180°: 180°-55° = 125°.", answer: "125°" },
         ],
         advanced: [
-          { prompt: "Cho 3 đường thẳng phân biệt a, b, c với a//b và b//c. Nếu góc giữa a và một đường thẳng d là 40°, tính góc giữa c và d.", solution: "Theo tính chất bắc cầu của quan hệ song song: a//b và b//c thì a//c.\nVì a//c, góc giữa c và d bằng góc giữa a và d (do các góc đồng vị/so le trong bằng nhau khi hai đường thẳng song song): 40°.", answer: "40°" },
-          { prompt: "Cho góc xOy=130°, tia Oz nằm trong góc sao cho góc xOz = 3×góc zOy. Tính góc xOz và góc zOy.", solution: "xOz+zOy=130°. Đặt zOy=t thì xOz=3t.\n3t+t=130° → 4t=130° → t=32,5°.\nVậy zOy=32,5°, xOz=97,5°.", answer: "97,5°" },
-          { prompt: "Hai đường thẳng song song bị cắt bởi hai cát tuyến tạo hai góc trong cùng phía là (2x+10)° và (3x−20)°. Tìm x.", solution: "Hai góc trong cùng phía bù nhau: (2x+10)+(3x-20)=180.\n5x-10=180 → 5x=190 → x=38.", answer: "38" },
+          { prompt: "Cho hai đường thẳng song song a, b bị cắt bởi đường thẳng c lần lượt tại A và B. Hai tia phân giác của một cặp góc so le trong tại A và B có song song với nhau không? Giải thích.", solution: "Vì a//b nên cặp góc so le trong tại A và B bằng nhau.\nTia phân giác chia đôi mỗi góc bằng nhau đó thành hai góc bằng nhau, nên các góc so le trong tạo bởi hai tia phân giác cũng bằng nhau.\nVậy hai tia phân giác đó song song với nhau.", answer: "Có, hai tia phân giác đó song song với nhau" },
+          { prompt: "Cho góc xOy=130°. Tia Oz nằm trong góc sao cho góc xOz − góc zOy = 30°. Tính góc xOz.", solution: "xOz+zOy=130° (vì Oz nằm trong góc xOy).\nxOz-zOy=30°.\nCộng hai phương trình: 2×xOz=160° → xOz=80°.", answer: "80°" },
+          { prompt: "Ba đường thẳng phân biệt, đôi một cắt nhau. Hỏi chúng tạo thành nhiều nhất bao nhiêu giao điểm?", solution: "Mỗi cặp đường thẳng cho tối đa 1 giao điểm. Số cặp trong 3 đường thẳng là C(3,2)=3.\nVậy tối đa 3 giao điểm (khi không có 3 đường nào đồng quy).", answer: "3" },
         ],
       },
       {
@@ -907,9 +907,9 @@ const GRADES = [
           { prompt: "Tam giác vuông có hai cạnh góc vuông bằng nhau. Đây là loại tam giác đặc biệt gì?", solution: "Đây là tam giác vuông cân.", answer: "Đây là tam giác vuông cân" },
         ],
         advanced: [
-          { prompt: "Tam giác ABC cân tại A, đường phân giác AD (D thuộc BC). Giải thích vì sao AD là đường trung trực của BC. Nếu BC=8cm, tính BD.", solution: "Trong tam giác cân, đường phân giác từ đỉnh cân đồng thời là đường trung tuyến, đường cao và đường trung trực.\nDo đó D là trung điểm BC: BD = BC/2 = 4cm.", answer: "4cm" },
-          { prompt: "Cho tam giác ABC = tam giác DEF. Biết chu vi tam giác ABC=24cm, AB=7cm, BC=9cm. Tính độ dài DF.", solution: "AC = 24-7-9 = 8cm.\nVì hai tam giác bằng nhau, cạnh tương ứng theo thứ tự đỉnh (A-D, B-E, C-F): DF = AC = 8cm.", answer: "8cm" },
-          { prompt: "Tam giác ABC vuông cân tại A. Tính các góc B và C.", solution: "Vì vuông tại A: góc B + góc C = 90°.\nVì cân tại A (AB=AC): góc B = góc C.\nSuy ra góc B = góc C = 45°.", answer: "45°" },
+          { prompt: "Tam giác ABC cân tại A, biết góc B = 2×góc A. Tính ba góc của tam giác.", solution: "Vì cân tại A nên góc B = góc C.\nTổng ba góc: góc A + góc B + góc C = 180°. Thay góc B=góc C=2×góc A: góc A+2×góc A+2×góc A=180° → 5×góc A=180° → góc A=36°.\nVậy góc A=36°, góc B=góc C=72°.", answer: "góc A=36°, góc B=góc C=72°" },
+          { prompt: "Tam giác ABC có AB=AC, M là trung điểm BC. Biết AM vuông góc BC. Tính góc AMB.", solution: "Xét tam giác ABM và ACM: AB=AC (giả thiết), BM=CM (M là trung điểm), AM chung → hai tam giác bằng nhau (c.c.c) → góc AMB=góc AMC.\nHai góc này kề bù (tổng 180°) và bằng nhau, nên mỗi góc bằng 90°.\nGóc AMB=90° (đây cũng chính là lý do AM luôn vuông góc BC trong tam giác cân).", answer: "90°" },
+          { prompt: "Tam giác ABC có D, E lần lượt là trung điểm AB, AC, biết DE=5cm. Trên tia đối của tia ED lấy F sao cho EF=ED. Tứ giác DBCF là hình gì? Tính BC.", solution: "DE là đường trung bình của tam giác ABC nên DE//BC và BC=2×DE=10cm.\nVì D, E, F thẳng hàng (F trên tia đối ED) và DE//BC nên DF//BC. Mặt khác DF=DE+EF=2×DE=10cm=BC.\nVì DF//BC và DF=BC nên tứ giác DBCF là hình bình hành. BC=10cm.", answer: "Hình bình hành; BC=10cm" },
         ],
       },
       {
@@ -936,9 +936,9 @@ const GRADES = [
           { prompt: "Một cửa hàng bán được 120 sản phẩm trong tuần, trong đó 45 sản phẩm loại A. Tính tỉ lệ % sản phẩm loại A.", solution: "Tỉ lệ = 45/120 = 0,375 = 37,5%.", answer: "37,5%" },
         ],
         advanced: [
-          { prompt: "Một lớp 40 học sinh, biểu đồ hình quạt: 30% giỏi, 45% khá, còn lại trung bình, trong đó 1/2 học sinh trung bình là nam. Tính số học sinh nam đạt trung bình.", solution: "Trung bình = 100%-30%-45% = 25%. Số học sinh trung bình = 40×25% = 10.\nSố nam đạt trung bình = 10/2 = 5.", answer: "5" },
-          { prompt: "Bảng số liệu nhiệt độ 7 ngày: 25, 27, 24, 28, 26, 30, 23 (°C). Tính nhiệt độ trung bình tuần, làm tròn đến 1 chữ số thập phân.", solution: "Tổng = 25+27+24+28+26+30+23 = 183.\nTrung bình = 183/7 ≈ 26,1°C.", answer: "183/7 ≈ 26,1°C" },
-          { prompt: "Lớp A (35 học sinh, 60% thích Toán) và lớp B (40 học sinh, 21 học sinh thích Toán). Lớp nào có tỉ lệ % thích Toán cao hơn?", solution: "Lớp A: 60%.\nLớp B: 21/40 = 52,5%.\nVậy lớp A có tỉ lệ cao hơn.", answer: "lớp A có tỉ lệ cao hơn" },
+          { prompt: "Một lớp có điểm trung bình môn Toán là 7,2. Nếu bớt đi 1 bạn có điểm 4 thì điểm trung bình của các bạn còn lại là 7,4. Hỏi lớp có bao nhiêu học sinh?", solution: "Gọi số học sinh là n. Tổng điểm cả lớp = 7,2n.\nSau khi bớt bạn điểm 4: tổng điểm còn lại = 7,2n-4, số bạn còn lại = n-1.\nTheo đề: (7,2n-4)/(n-1) = 7,4 → 7,2n-4 = 7,4n-7,4 → 7,4-4 = 7,4n-7,2n → 3,4=0,2n → n=17.", answer: "17 học sinh" },
+          { prompt: "Bảng điểm của 5 bạn có điểm trung bình là 8, biết không bạn nào có điểm giống nhau và tất cả đều là số nguyên từ 6 đến 10. Tìm 5 điểm số đó.", solution: "Tổng điểm = 8×5=40. Cần 5 số nguyên phân biệt trong khoảng 6 đến 10 có tổng bằng 40.\nCác số 6,7,8,9,10 vừa đủ 5 số phân biệt trong khoảng đó, và tổng của chúng = 6+7+8+9+10=40, khớp hoàn toàn.\nVậy 5 điểm số là 6, 7, 8, 9, 10.", answer: "6, 7, 8, 9, 10" },
+          { prompt: "Trong một khảo sát, 60% số người thích trà, 45% thích cà phê, 20% thích cả hai loại. Hỏi bao nhiêu % không thích loại nào trong hai loại đó?", solution: "Theo nguyên lý bù trừ: tỉ lệ thích ít nhất một loại = 60%+45%-20% = 85%.\nTỉ lệ không thích loại nào = 100%-85% = 15%.", answer: "15%" },
         ],
       },
       {
@@ -965,9 +965,9 @@ const GRADES = [
           { prompt: "Tìm x, y biết x/3=y/5 và x+y=24.", solution: "Theo tính chất dãy tỉ số bằng nhau: x/3=y/5=(x+y)/8=24/8=3.\nx=3×3=9. y=5×3=15.", answer: "15" },
         ],
         advanced: [
-          { prompt: "Ba số a, b, c tỉ lệ với 2, 3, 4. Biết 2a−b+c=25. Tìm a, b, c.", solution: "Đặt a/2=b/3=c/4=k, suy ra a=2k, b=3k, c=4k.\n2(2k)-3k+4k=25 → 4k-3k+4k=25 → 5k=25 → k=5.\nVậy a=10, b=15, c=20.", answer: "20" },
-          { prompt: "y tỉ lệ thuận với x², biết x=2 thì y=12. Tìm y khi x=5.", solution: "y=kx². Thay x=2,y=12: 12=k×4 → k=3.\nKhi x=5: y=3×25=75.", answer: "75" },
-          { prompt: "Chia số 156 thành 3 phần tỉ lệ nghịch với 2, 3, 4.", solution: "Tỉ lệ nghịch với 2,3,4 nghĩa là tỉ lệ thuận với 1/2, 1/3, 1/4.\nQuy đồng: 6/12, 4/12, 3/12, tức tỉ lệ 6:4:3. Tổng phần = 13.\nMỗi phần = 156/13 = 12. Ba số: 6×12=72, 4×12=48, 3×12=36.", answer: "36" },
+          { prompt: "Ba đội công nhân có số người tỉ lệ với 3, 4, 5; cùng làm một công việc với năng suất mỗi người như nhau nên thời gian hoàn thành tỉ lệ nghịch với số người. Đội có tỉ lệ 3 hoàn thành trong 20 ngày. Hỏi đội có tỉ lệ 5 hoàn thành trong bao nhiêu ngày?", solution: "Thời gian tỉ lệ nghịch với số người, nên tỉ lệ thuận với 1/3, 1/4, 1/5.\nQuy đồng: 1/3:1/4:1/5 = 20:15:12 (mẫu chung 60).\nĐội tỉ lệ 3 (ứng với phần 20) mất 20 ngày, suy ra mỗi phần ứng với 1 ngày.\nĐội tỉ lệ 5 (ứng với phần 12) mất 12 ngày.", answer: "12 ngày" },
+          { prompt: "Cho a/2=b/3=c/4 và a+2b−c=6. Tìm a, b, c.", solution: "Đặt a/2=b/3=c/4=k, suy ra a=2k, b=3k, c=4k.\nThay vào a+2b-c=6: 2k+6k-4k=6 → 4k=6 → k=1,5.\nVậy a=3, b=4,5, c=6.", answer: "a=3, b=4,5, c=6" },
+          { prompt: "Một khu vườn hình chữ nhật có tỉ số chiều dài : chiều rộng = 5:3. Nếu giảm chiều dài 5m và tăng chiều rộng 5m thì trở thành hình vuông. Tính diện tích khu vườn ban đầu.", solution: "Gọi chiều dài=5x, chiều rộng=3x. Khi giảm dài 5m và tăng rộng 5m thành hình vuông: 5x-5=3x+5 → 2x=10 → x=5.\nChiều dài=25m, chiều rộng=15m.\nDiện tích = 25×15 = 375m².", answer: "375m²" },
         ],
       },
       {
@@ -994,9 +994,9 @@ const GRADES = [
           { prompt: "Tính giá trị đa thức tại x=0: P(x)=5x³−3x+7", solution: "P(0) = 5(0)-3(0)+7 = 7.", answer: "7" },
         ],
         advanced: [
-          { prompt: "Cho đa thức P(x)=2x³−5x²+3x−1. Tính P(2)−P(1).", solution: "P(2)=2(8)-5(4)+3(2)-1=16-20+6-1=1.\nP(1)=2-5+3-1=-1.\nP(2)-P(1)=1-(-1)=2.", answer: "2" },
-          { prompt: "Tìm m để đa thức Q(x)=x²+mx+9 có nghiệm x=3.", solution: "Q(3)=9+3m+9=0 → 3m=-18 → m=-6.", answer: "-6" },
-          { prompt: "Rút gọn: (2x²−3x+1)+(x²+3x−4)−(3x²−2x+5)", solution: "Nhóm các hạng tử đồng dạng: (2x²+x²-3x²)+(-3x+3x+2x)+(1-4-5) = 0x²+2x-8 = 2x-8.", answer: "2x-8" },
+          { prompt: "Tìm đa thức bậc hai P(x)=ax²+bx+c biết P(0)=1, P(1)=4, P(−1)=2.", solution: "P(0)=c=1.\nP(1)=a+b+c=4 → a+b=3.\nP(-1)=a-b+c=2 → a-b=1.\nCộng hai phương trình: 2a=4 → a=2, suy ra b=1.\nVậy P(x)=2x²+x+1.", answer: "P(x)=2x²+x+1" },
+          { prompt: "Cho đa thức P(x) thỏa mãn P(x)+P(1−x)=1 với mọi x. Tính P(0)+P(1).", solution: "Thay x=0 vào đẳng thức đã cho: P(0)+P(1-0)=1, tức P(0)+P(1)=1.", answer: "1" },
+          { prompt: "Tìm số giá trị x thỏa mãn: (x−1)(x−2)(x−3)...(x−2024) = 0", solution: "Tích bằng 0 khi và chỉ khi có ít nhất một nhân tử bằng 0, tức x=1, x=2, x=3, ..., hoặc x=2024.\nCó tất cả 2024 giá trị x thỏa mãn (mỗi giá trị cho đúng 1 nghiệm).", answer: "2024" },
         ],
       },
       {
@@ -1023,9 +1023,9 @@ const GRADES = [
           { prompt: "Biến cố \"Mặt trời mọc ở hướng Đông\" là loại biến cố gì?", solution: "Đây là biến cố chắc chắn, vì luôn xảy ra trong thực tế.", answer: "Đây là biến cố chắc chắn, vì luôn xảy ra trong thực tế" },
         ],
         advanced: [
-          { prompt: "Một hộp có 4 bi đỏ, 3 bi xanh, 5 bi vàng. Lấy 1 bi, tính xác suất không phải bi vàng.", solution: "Tổng số bi = 12. Không vàng = 4+3=7.\nXác suất = 7/12.", answer: "7/12" },
-          { prompt: "Gieo 2 xúc xắc, tính xác suất tổng 2 mặt lớn hơn 9.", solution: "Các tổng thỏa mãn: 10 (3 cách), 11 (2 cách), 12 (1 cách). Tổng 6 cách trong 36.\nXác suất = 6/36 = 1/6.", answer: "1/6" },
-          { prompt: "Một túi có 20 thẻ đánh số 1-20. Rút 1 thẻ, tính xác suất được số chia hết cho 4 hoặc chia hết cho 5.", solution: "Chia hết cho 4: 4,8,12,16,20 (5 số). Chia hết cho 5: 5,10,15,20 (4 số). Trùng cả 2 (chia hết cho 20): chỉ số 20 (1 số).\nSố thỏa mãn = 5+4-1 = 8. Xác suất = 8/20 = 2/5.", answer: "2/5" },
+          { prompt: "Gieo 2 xúc xắc. Tính xác suất để tích hai số chấm là một số chính phương (1, 4, 9, 16, 25, 36).", solution: "Liệt kê các cặp có tích là số chính phương:\nTích=1: (1,1) → 1 cách.\nTích=4: (1,4),(4,1),(2,2) → 3 cách.\nTích=9: (3,3) → 1 cách.\nTích=16: (4,4) → 1 cách.\nTích=25: (5,5) → 1 cách.\nTích=36: (6,6) → 1 cách.\nTổng = 1+3+1+1+1+1 = 8 cách trong 36.\nXác suất = 8/36 = 2/9.", answer: "2/9" },
+          { prompt: "Một hộp có 3 loại bi đỏ, xanh, vàng theo tỉ lệ 2:3:5, tổng cộng 40 viên. Lấy ngẫu nhiên 1 viên, tính xác suất không phải bi đỏ.", solution: "Tổng số phần = 2+3+5=10. Số bi đỏ = 40×2/10 = 8.\nSố bi không đỏ = 40-8 = 32.\nXác suất = 32/40 = 4/5.", answer: "4/5" },
+          { prompt: "Ba bạn An, Bình, Chi xếp ngẫu nhiên thành một hàng dọc. Tính xác suất để An đứng đầu hàng.", solution: "Tổng số cách xếp 3 người: 3!=6.\nSố cách để An đứng đầu: cố định An ở đầu, xếp 2 bạn còn lại: 2!=2 cách.\nXác suất = 2/6 = 1/3.", answer: "1/3" },
         ],
       },
       {
@@ -1052,9 +1052,9 @@ const GRADES = [
           { prompt: "Hai đường xiên kẻ từ một điểm đến một đường thẳng có hình chiếu bằng nhau. So sánh hai đường xiên đó.", solution: "Khi hình chiếu bằng nhau thì hai đường xiên đó cũng bằng nhau.", answer: "Khi hình chiếu bằng nhau thì hai đường xiên đó cũng bằng nhau" },
         ],
         advanced: [
-          { prompt: "Tam giác ABC có AB=5cm, AC=12cm. Biết BC là số nguyên. Tìm giá trị lớn nhất có thể của BC.", solution: "Theo bất đẳng thức tam giác: |12-5|<BC<12+5, tức 7<BC<17.\nGiá trị nguyên lớn nhất thỏa mãn là 16.", answer: "Giá trị nguyên lớn nhất thỏa mãn là 16" },
-          { prompt: "Trong tam giác ABC, biết AB<AC<BC. Sắp xếp các góc A, B, C theo thứ tự tăng dần.", solution: "Góc đối diện cạnh nhỏ nhất (AB) là góc C — nhỏ nhất. Góc đối diện cạnh lớn nhất (BC) là góc A — lớn nhất.\nThứ tự tăng dần: góc C < góc B < góc A.", answer: "Thứ tự tăng dần: góc C < góc B < góc A" },
-          { prompt: "Tam giác ABC vuông tại A, đường cao AH. So sánh AH với AB và AC.", solution: "AH là đoạn vuông góc từ A đến BC, còn AB, AC nối các đỉnh khác nên dài hơn hình chiếu của chúng.\nDo đường vuông góc luôn ngắn nhất trong các đoạn nối từ một điểm đến một đường thẳng: AH < AB và AH < AC.", answer: "AH < AB và AH < AC" },
+          { prompt: "Tam giác ABC có hai cạnh 7cm và 10cm. Cạnh còn lại là số nguyên (cm). Hỏi cạnh còn lại có thể nhận bao nhiêu giá trị nguyên?", solution: "Theo bất đẳng thức tam giác: |10-7|<cạnh<10+7, tức 3<cạnh<17.\nCác giá trị nguyên thỏa mãn: 4,5,6,...,16 — có tất cả 16-4+1=13 giá trị.", answer: "13 giá trị" },
+          { prompt: "Tam giác ABC vuông tại A có AB=6cm, AC=8cm, đường cao AH. Tính AH.", solution: "Theo Pytago: BC=√(6²+8²)=√100=10cm.\nDiện tích tam giác tính hai cách: ½×AB×AC = ½×AH×BC.\n½×6×8 = ½×AH×10 → 24=5×AH → AH=4,8cm.", answer: "4,8cm" },
+          { prompt: "Tam giác ABC có góc A=90°, đường trung tuyến AM (M là trung điểm BC). Biết BC=10cm. Tính AM.", solution: "Tính chất: trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền.\nAM = BC/2 = 10/2 = 5cm.", answer: "5cm" },
         ],
       },
       {
@@ -1081,9 +1081,9 @@ const GRADES = [
           { prompt: "Một hộp quà hình lập phương cạnh 15cm. Tính diện tích giấy gói tối thiểu (bằng diện tích toàn phần).", solution: "Diện tích toàn phần = 6×cạnh² = 6×225 = 1350cm².", answer: "1350cm²" },
         ],
         advanced: [
-          { prompt: "Một hình hộp chữ nhật có chiều dài gấp đôi chiều rộng, chiều rộng gấp đôi chiều cao. Biết chiều cao 3cm. Tính thể tích.", solution: "Cao=3cm, rộng=6cm, dài=12cm.\nV = 12×6×3 = 216cm³.", answer: "216cm³" },
-          { prompt: "Một khối lập phương có diện tích toàn phần 150cm². Tính thể tích.", solution: "Diện tích 1 mặt = 150/6 = 25cm². Cạnh = √25 = 5cm.\nThể tích = 5³ = 125cm³.", answer: "125cm³" },
-          { prompt: "Một bể bơi hình hộp chữ nhật dài 10m, rộng 5m, sâu 1,5m. Tính số lít nước cần để bơm đầy 3/4 bể (1m³=1000 lít).", solution: "Thể tích bể = 10×5×1,5 = 75m³.\n3/4 bể = 56,25m³ = 56.250 lít.", answer: "56.250 lít" },
+          { prompt: "Một bể nước hình hộp chữ nhật đáy hình vuông cạnh 40cm, cao 60cm, đang chứa nước cao 30cm. Thả vào bể một khối lập phương cạnh 20cm ngập hoàn toàn. Hỏi mực nước dâng lên bao nhiêu cm?", solution: "Thể tích khối lập phương = 20³ = 8000cm³.\nDiện tích đáy bể = 40×40 = 1600cm².\nMực nước dâng thêm = 8000:1600 = 5cm.", answer: "5cm" },
+          { prompt: "Một hình hộp chữ nhật có 3 kích thước là số nguyên (cm), thể tích bằng 60cm³. Tìm bộ kích thước sao cho diện tích toàn phần nhỏ nhất, và tính diện tích đó.", solution: "Diện tích toàn phần nhỏ nhất khi 3 kích thước gần bằng nhau nhất (gần khối lập phương nhất).\nPhân tích 60=3×4×5 cho 3 số gần nhau nhất trong các cách phân tích có thể.\nDiện tích toàn phần = 2×(3×4+4×5+3×5) = 2×(12+20+15) = 2×47 = 94cm².", answer: "3cm×4cm×5cm, diện tích toàn phần 94cm²" },
+          { prompt: "Một khối gỗ lập phương cạnh 10cm được sơn đỏ toàn bộ mặt ngoài, sau đó cắt thành các khối lập phương nhỏ cạnh 1cm. Hỏi có bao nhiêu khối nhỏ có đúng 2 mặt được sơn đỏ?", solution: "Các khối có đúng 2 mặt sơn nằm dọc theo các cạnh của khối lớn (không tính 2 đầu là góc, vì góc có 3 mặt sơn).\nKhối lập phương có 12 cạnh, mỗi cạnh dài 10cm nên có 10 khối nhỏ dọc theo cạnh, trừ đi 2 khối ở hai đầu (là góc): còn 8 khối có đúng 2 mặt sơn trên mỗi cạnh.\nTổng = 12×8 = 96 khối.", answer: "96 khối" },
         ],
       },
     ],
@@ -1119,9 +1119,9 @@ const GRADES = [
           { prompt: "Tính: (2x+1)(3x−2)", solution: "2x×3x+2x×(-2)+1×3x+1×(-2) = 6x²-4x+3x-2 = 6x²-x-2.", answer: "6x²-x-2" },
         ],
         advanced: [
-          { prompt: "Tìm đa thức thương và dư khi chia x³−3x²+2x−5 cho x−2.", solution: "Chia lần lượt: x³÷x=x², nhân ngược trừ được -x²+2x; -x²÷x=-x, nhân ngược trừ được 0-5=-5.\nThương = x²-x, dư = -5.\nKiểm tra: (x-2)(x²-x)-5 = x³-3x²+2x-5 ✓.", answer: "x³-3x²+2x-5 ✓" },
-          { prompt: "Cho đa thức P(x)=x³+ax+b chia hết cho (x−1) và (x+2). Tìm a, b.", solution: "P(1)=0: 1+a+b=0.\nP(-2)=0: -8-2a+b=0.\nTừ pt1: b=-1-a. Thay vào pt2: -8-2a+(-1-a)=0 → -9-3a=0 → a=-3.\nb=-1-(-3)=2.", answer: "2" },
-          { prompt: "Rút gọn biểu thức: (x+y)³ − (x−y)³", solution: "(x+y)³=x³+3x²y+3xy²+y³.\n(x-y)³=x³-3x²y+3xy²-y³.\nHiệu = 6x²y+2y³ = 2y(3x²+y²).", answer: "2y(3x²+y²)" },
+          { prompt: "Cho x+y=5, xy=6. Tính x³+y³ (không cần tìm x, y cụ thể).", solution: "Áp dụng: x³+y³ = (x+y)³ − 3xy(x+y) = 5³ − 3×6×5 = 125-90 = 35.", answer: "35" },
+          { prompt: "Chứng minh n³−n chia hết cho 6 với mọi số tự nhiên n (gợi ý: phân tích thành tích 3 số tự nhiên liên tiếp).", solution: "n³-n = n(n²-1) = n(n-1)(n+1) = tích của 3 số tự nhiên liên tiếp (n-1, n, n+1).\nTrong 3 số tự nhiên liên tiếp luôn có ít nhất 1 số chia hết cho 2, và luôn có đúng 1 số chia hết cho 3.\nDo đó tích chia hết cho cả 2 và 3, tức chia hết cho 6.", answer: "n(n-1)(n+1), luôn chia hết cho 6" },
+          { prompt: "Tìm số dư khi chia x¹⁰⁰ cho x²−1 (gợi ý: viết x²=1+(x²−1)).", solution: "Ta có x¹⁰⁰=(x²)⁵⁰. Viết x²=1+(x²-1), nên x¹⁰⁰=(1+(x²-1))⁵⁰.\nKhi khai triển, mọi số hạng chứa (x²-1) đều chia hết cho (x²-1), chỉ còn số hạng không chứa nó là 1⁵⁰=1.\nVậy số dư khi chia x¹⁰⁰ cho x²-1 là 1.", answer: "1" },
         ],
       },
       {
@@ -1148,9 +1148,9 @@ const GRADES = [
           { prompt: "Tính nhanh: 25²−15² (dùng hiệu hai bình phương)", solution: "25²-15² = (25-15)(25+15) = 10×40 = 400.", answer: "400" },
         ],
         advanced: [
-          { prompt: "Tính giá trị biểu thức x²+y² biết x+y=5 và xy=6.", solution: "x²+y² = (x+y)²-2xy = 25-12 = 13.", answer: "13" },
-          { prompt: "Phân tích thành nhân tử: x³−8", solution: "x³-8 = x³-2³ = (x-2)(x²+2x+4) (hằng đẳng thức hiệu hai lập phương).", answer: "4" },
-          { prompt: "Biết a+b+c=0, chứng tỏ a³+b³+c³=3abc.", solution: "Áp dụng hằng đẳng thức: a³+b³+c³-3abc = (a+b+c)(a²+b²+c²-ab-bc-ca).\nVì a+b+c=0, vế phải bằng 0, suy ra a³+b³+c³-3abc=0, tức a³+b³+c³=3abc.", answer: "3abc" },
+          { prompt: "Phân tích thành nhân tử: x⁴+4 (gợi ý: thêm bớt 4x² để tạo hằng đẳng thức hiệu hai bình phương).", solution: "x⁴+4 = x⁴+4x²+4−4x² = (x²+2)²−(2x)² = (x²+2-2x)(x²+2+2x).\nVậy x⁴+4 = (x²-2x+2)(x²+2x+2).", answer: "(x²-2x+2)(x²+2x+2)" },
+          { prompt: "Cho a+b+c=0. Chứng minh a³+b³+c³=3abc, áp dụng tính: (a-b)³+(b-c)³+(c-a)³ theo a,b,c (gợi ý: đặt x=a-b,y=b-c,z=c-a).", solution: "Áp dụng hằng đẳng thức a³+b³+c³-3abc=(a+b+c)(a²+b²+c²-ab-bc-ca): khi a+b+c=0, vế phải bằng 0, nên a³+b³+c³=3abc.\nĐặt x=a-b, y=b-c, z=c-a: ta có x+y+z=0 (vì (a-b)+(b-c)+(c-a)=0).\nÁp dụng kết quả trên cho x,y,z: x³+y³+z³=3xyz.\nVậy (a-b)³+(b-c)³+(c-a)³ = 3(a-b)(b-c)(c-a).", answer: "3(a-b)(b-c)(c-a)" },
+          { prompt: "Biết a+b+c=0 và abc=6. Tính giá trị của a³+b³+c³.", solution: "Vì a+b+c=0, theo hằng đẳng thức a³+b³+c³-3abc=(a+b+c)(...)=0, nên a³+b³+c³=3abc=3×6=18.", answer: "18" },
         ],
       },
       {
@@ -1177,9 +1177,9 @@ const GRADES = [
           { prompt: "Hình vuông có đường chéo 10cm. Tính cạnh hình vuông (dùng Pytago: cạnh×√2=đường chéo).", solution: "cạnh = 10/√2 = 5√2 ≈ 7,07cm.", answer: "5√2 ≈ 7,07cm" },
         ],
         advanced: [
-          { prompt: "Hình thang cân có hai đường chéo vuông góc với nhau, đường cao 8cm. Biết tính chất: đường cao bằng trung bình cộng hai đáy. Tính tổng hai đáy.", solution: "Theo tính chất, đường cao = (đáy lớn+đáy nhỏ)/2 = 8, nên tổng hai đáy = 2×8 = 16cm.", answer: "16cm" },
-          { prompt: "Hình bình hành ABCD có chu vi 30cm, cạnh AB gấp đôi cạnh BC. Tính độ dài AB và BC.", solution: "2(AB+BC)=30 → AB+BC=15.\nAB=2BC → 2BC+BC=15 → 3BC=15 → BC=5cm, AB=10cm.", answer: "10cm" },
-          { prompt: "Hình thoi ABCD có góc A=60°, cạnh a. Tính độ dài hai đường chéo theo a.", solution: "Vì góc A=60° và hai cạnh kề bằng nhau (=a), tam giác tạo bởi 2 cạnh và đường chéo ngắn là tam giác đều, nên đường chéo ngắn = a.\nĐường chéo dài: nửa đường chéo dài = √(a²-(a/2)²) = a√3/2, nên đường chéo dài = a√3.", answer: "a√3" },
+          { prompt: "Cho hình chữ nhật ABCD và điểm M bất kỳ. Biết hệ thức MA²+MC²=MB²+MD² luôn đúng. Áp dụng: MA=3cm, MB=4cm, MC=5cm. Tính MD.", solution: "Theo hệ thức đã cho: MD² = MA²+MC²−MB² = 9+25-16 = 18.\nMD = √18 = 3√2 cm.", answer: "3√2 cm" },
+          { prompt: "Hình bình hành ABCD có diện tích 48cm², O là giao điểm hai đường chéo. Gọi M, N lần lượt là trung điểm OA, OC. Biết BMDN cũng là hình bình hành có diện tích bằng nửa diện tích ABCD, tính diện tích BMDN.", solution: "Vì O là trung điểm cả hai đường chéo AC và BD (tính chất hình bình hành), và M, N lần lượt là trung điểm OA, OC nên BD và MN cùng bị chia đôi bởi O — do đó BMDN là hình bình hành.\nTheo tính chất cho trước: diện tích BMDN = ½ × diện tích ABCD = ½×48 = 24cm².", answer: "24cm²" },
+          { prompt: "Tứ giác ABCD có hai đường chéo AC, BD vuông góc với nhau, AC=8cm, BD=6cm. Tính diện tích tứ giác (dùng công thức tổng quát S=½×d₁×d₂ khi hai đường chéo vuông góc).", solution: "S = ½ × AC × BD = ½ × 8 × 6 = 24cm².", answer: "24cm²" },
         ],
       },
       {
@@ -1206,9 +1206,9 @@ const GRADES = [
           { prompt: "Tam giác ABC có DE//BC, AD=3cm, AB=9cm, BC=12cm. Tính DE.", solution: "AD/AB = DE/BC (Thalès) → 3/9 = DE/12 → DE = 4cm.", answer: "4cm" },
         ],
         advanced: [
-          { prompt: "Tam giác ABC có D, E lần lượt trên AB, AC sao cho DE//BC. Biết AD/AB=2/5 và diện tích tam giác ADE=8cm². Tính diện tích tam giác ABC.", solution: "Tỉ số đồng dạng k=AD/AB=2/5. Tỉ số diện tích = k²=4/25.\nDiện tích ABC = 8×25/4 = 50cm².", answer: "50cm²" },
-          { prompt: "Tam giác ABC có trung tuyến AM, trọng tâm G. Biết AM=9cm. Tính AG và GM.", solution: "Trọng tâm chia trung tuyến theo tỉ lệ 2:1 tính từ đỉnh.\nAG = 2/3×AM = 6cm. GM = 1/3×AM = 3cm.", answer: "3cm" },
-          { prompt: "Hình thang ABCD (AB//CD) có hai đường chéo cắt nhau tại O. Biết AB=6cm, CD=10cm, diện tích tam giác AOB=18cm². Tính diện tích tam giác COD.", solution: "Tam giác AOB đồng dạng tam giác COD theo tỉ số AB/CD=6/10=3/5.\nTỉ số diện tích=(3/5)²=9/25. Diện tích COD = 18×25/9 = 50cm².", answer: "50cm²" },
+          { prompt: "Hình thang ABCD (AB//CD), hai đường chéo cắt nhau tại O. Biết diện tích tam giác AOB=4cm², diện tích tam giác COD=16cm². Tính diện tích hình thang ABCD.", solution: "Vì AB//CD, tam giác AOB đồng dạng tam giác COD theo tỉ số k=AB/CD. Tỉ số diện tích k²=4/16=1/4 → k=1/2.\nTính chất quen thuộc trong hình thang: diện tích tam giác AOD = diện tích tam giác BOC = √(S_AOB × S_COD) = √(4×16) = 8cm².\nDiện tích hình thang = S_AOB+S_COD+S_AOD+S_BOC = 4+16+8+8 = 36cm².", answer: "36cm²" },
+          { prompt: "Tam giác ABC có trọng tâm G. Đường thẳng qua G song song với BC cắt AB, AC lần lượt tại M, N. Tính tỉ số MN/BC.", solution: "Trọng tâm G chia trung tuyến AM' (M' là trung điểm BC) theo tỉ lệ AG/AM'=2/3.\nVì MN//BC và đi qua G, theo định lí Thalès: MN/BC = AG/AM' = 2/3.", answer: "2/3" },
+          { prompt: "Tam giác ABC có D, E lần lượt là trung điểm AB, AC. G là trọng tâm tam giác ABC. Tính tỉ số diện tích tam giác GDE với diện tích tam giác ABC.", solution: "DE là đường trung bình nên tam giác ADE đồng dạng ABC theo tỉ số 1/2, diện tích ADE = 1/4 diện tích ABC.\nG cũng đóng vai trò như trọng tâm trong tam giác ADE (vì phép vị tự tỉ số 1/2 tâm A biến ABC thành ADE và biến G thành chính G), nên diện tích GDE = 1/3 diện tích ADE = 1/3×1/4 = 1/12 diện tích ABC.", answer: "1/12" },
         ],
       },
       {
@@ -1235,9 +1235,9 @@ const GRADES = [
           { prompt: "Biểu đồ cột thể hiện số học sinh giỏi qua 3 năm: 20, 25, 30. Năm nào tăng nhiều nhất so với năm trước?", solution: "Năm 2 tăng 25-20=5. Năm 3 tăng 30-25=5. Cả hai năm tăng đều nhau, mỗi năm tăng 5 học sinh.", answer: "5" },
         ],
         advanced: [
-          { prompt: "Một khảo sát 200 người có biểu đồ hình quạt: 35% thích cà phê, 25% thích trà, phần còn lại thích nước ép chia đều 2 loại cam và táo. Tính số người thích nước cam.", solution: "Nước ép chiếm = 100%-35%-25% = 40%. Chia đều 2 loại: mỗi loại 20%.\nSố người thích cam = 200×20% = 40 người.", answer: "40 người" },
-          { prompt: "Doanh thu một cửa hàng tăng liên tục qua 4 tháng, mỗi tháng tăng 10% so với tháng trước. Biết doanh thu tháng 1 là 100 triệu. Tính doanh thu tháng 4.", solution: "Tháng 2 = 100×1,1 = 110 triệu.\nTháng 3 = 110×1,1 = 121 triệu.\nTháng 4 = 121×1,1 = 133,1 triệu.", answer: "133,1 triệu" },
-          { prompt: "Bảng tần số điểm kiểm tra một lớp: điểm 5 (3 bạn), 6 (5 bạn), 7 (8 bạn), 8 (6 bạn), 9 (3 bạn), 10 (2 bạn). Tính điểm trung bình của lớp.", solution: "Trung bình = (5×3+6×5+7×8+8×6+9×3+10×2)/27 = (15+30+56+48+27+20)/27 = 196/27 ≈ 7,26.", answer: "196/27 ≈ 7,26" },
+          { prompt: "Một lớp có điểm trung bình 6,5. Nếu chuyển điểm của 1 bạn từ 4 thành 9 thì điểm trung bình cả lớp tăng lên 6,7. Hỏi lớp có bao nhiêu học sinh?", solution: "Khi đổi điểm 1 bạn từ 4 thành 9, tổng điểm tăng thêm 9-4=5.\nMức tăng của trung bình = (tổng tăng thêm)/(số học sinh): 5/n = 6,7-6,5 = 0,2 → n=25.", answer: "25 học sinh" },
+          { prompt: "Doanh thu một công ty tăng đều mỗi năm theo cùng một số tiền. Năm 2020 doanh thu 500 triệu, năm 2023 doanh thu 800 triệu. Nếu xu hướng tiếp tục, doanh thu năm 2025 là bao nhiêu?", solution: "Từ 2020 đến 2023 (3 năm) tăng 800-500=300 triệu, mỗi năm tăng 100 triệu.\nTừ 2023 đến 2025 là 2 năm, tăng thêm 200 triệu.\nDoanh thu 2025 = 800+200 = 1000 triệu.", answer: "1000 triệu" },
+          { prompt: "Trong 30 học sinh, có 18 bạn thích Toán, 15 bạn thích Lý, 8 bạn thích cả hai môn. Hỏi có bao nhiêu bạn không thích môn nào trong hai môn đó?", solution: "Số bạn thích ít nhất một môn (nguyên lý bù trừ) = 18+15-8 = 25.\nSố bạn không thích môn nào = 30-25 = 5.", answer: "5" },
         ],
       },
       {
@@ -1264,9 +1264,9 @@ const GRADES = [
           { prompt: "Tìm điều kiện xác định của phân thức: (x−1)/(x²+x)", solution: "Mẫu khác 0: x²+x=x(x+1)≠0 → x≠0 và x≠-1.", answer: "x(x+1)≠0 → x≠0 và x≠-1" },
         ],
         advanced: [
-          { prompt: "Rút gọn biểu thức: (x²−y²)/(x²+2xy+y²)", solution: "Tử = (x-y)(x+y). Mẫu = (x+y)².\nRút gọn (x+y): kết quả = (x-y)/(x+y).", answer: "(x-y)/(x+y)" },
-          { prompt: "Thực hiện phép tính: 1/(x−1) − 1/(x+1) − 2/(x²−1)", solution: "Mẫu chung: x²-1=(x-1)(x+1).\n= (x+1)/(x²-1) - (x-1)/(x²-1) - 2/(x²-1)\n= [(x+1)-(x-1)-2]/(x²-1) = 0/(x²-1) = 0.", answer: "0" },
-          { prompt: "Tìm x để phân thức (x²−4)/(x²−5x+6) không xác định.", solution: "Mẫu = 0: x²-5x+6=0 → (x-2)(x-3)=0 → x=2 hoặc x=3.\nVậy phân thức không xác định khi x=2 hoặc x=3.", answer: "3" },
+          { prompt: "Rút gọn: (x³−1)/(x²+x+1) (gợi ý: dùng hằng đẳng thức hiệu hai lập phương).", solution: "x³-1 = (x-1)(x²+x+1) (hằng đẳng thức hiệu hai lập phương).\nRút gọn (x²+x+1): kết quả = x-1.", answer: "x-1" },
+          { prompt: "Tính tổng: 1/(x(x+1)) + 1/((x+1)(x+2)) + 1/((x+2)(x+3)) (gợi ý: mỗi số hạng phân tích thành hiệu 2 phân thức).", solution: "1/(x(x+1)) = 1/x − 1/(x+1). Tương tự cho các số hạng khác.\nTổng = (1/x−1/(x+1))+(1/(x+1)−1/(x+2))+(1/(x+2)−1/(x+3)) = 1/x − 1/(x+3) (các số hạng giữa triệt tiêu).\n= 3/(x(x+3)).", answer: "3/(x(x+3))" },
+          { prompt: "Cho x + 1/x = 3. Tính x³ + 1/x³.", solution: "Trước tiên: x²+1/x² = (x+1/x)²−2 = 9−2 = 7.\nSau đó: (x+1/x)(x²+1/x²) = x³+1/x+x+1/x³ = x³+1/x³+(x+1/x).\nSuy ra x³+1/x³ = (x+1/x)(x²+1/x²) − (x+1/x) = 3×7 − 3 = 21−3 = 18.", answer: "18" },
         ],
       },
       {
@@ -1293,9 +1293,9 @@ const GRADES = [
           { prompt: "Tìm giao điểm của hai đường thẳng y=x+2 và y=3x−4.", solution: "x+2 = 3x-4 → 6=2x → x=3.\nThay vào: y=3+2=5.\nĐiểm cắt nhau là (3;5).", answer: "Điểm cắt nhau là (3;5)" },
         ],
         advanced: [
-          { prompt: "Giải phương trình chứa ẩn ở mẫu: 2/(x−1) = 3/(x+2) (x≠1, x≠−2)", solution: "2(x+2) = 3(x-1) → 2x+4 = 3x-3 → x=7 (thỏa điều kiện x≠1, x≠-2).", answer: "7 (thỏa điều kiện x≠1, x≠-2)" },
-          { prompt: "Tìm a để hai đường thẳng y=ax+3 và y=2x−1 song song. Với a tìm được, tìm giao điểm của đường thẳng y=ax+3 với trục hoành.", solution: "Song song khi cùng hệ số góc: a=2 (và 3≠-1 nên đúng là song song, không trùng nhau).\nVới a=2: y=2x+3. Cho y=0: x=-1,5. Giao điểm với trục hoành: (-1,5; 0).", answer: "(-1,5; 0)" },
-          { prompt: "Ba điểm A(1,2), B(3,6), C(m,10) thẳng hàng. Tìm m.", solution: "Hệ số góc AB = (6-2)/(3-1) = 2. Đường thẳng qua A, B: y=2x.\nĐiểm C(m,10) thuộc đường thẳng: 10=2m → m=5.", answer: "5" },
+          { prompt: "Giải phương trình: (x−1)/2019 + (x−2)/2018 = (x−3)/2017 + (x−4)/2016 (gợi ý: cộng 1 vào mỗi phân thức).", solution: "Cộng 1 vào mỗi số hạng: (x-1)/2019+1=(x+2018)/2019, tương tự các số hạng khác đều trở thành (x+2018)/mẫu tương ứng.\nPhương trình trở thành: (x+2018)×(1/2019+1/2018−1/2017−1/2016)=0.\nVì hệ số trong ngoặc khác 0, suy ra x+2018=0 → x=-2018.", answer: "-2018" },
+          { prompt: "Tìm m để phương trình (2m−1)x+3=0 vô nghiệm.", solution: "Phương trình vô nghiệm khi hệ số của x bằng 0 nhưng hằng số khác 0: 2m-1=0 → m=1/2 (và 3≠0 luôn đúng).", answer: "1/2" },
+          { prompt: "Ba đường thẳng y=2x+1, y=−x+4, y=mx−2 đồng quy tại một điểm. Tìm m.", solution: "Tìm giao điểm hai đường đầu: 2x+1=-x+4 → 3x=3 → x=1, y=3. Điểm giao là (1;3).\nĐường thứ ba đi qua điểm này: 3=m(1)-2 → m=5.", answer: "5" },
         ],
       },
       {
@@ -1322,9 +1322,9 @@ const GRADES = [
           { prompt: "Một hộp có 5 bi đỏ, 5 bi xanh. Lấy ngẫu nhiên 1 bi. Tính xác suất lấy được bi đỏ.", solution: "Tổng số bi = 10.\nXác suất = 5/10 = 1/2.", answer: "1/2" },
         ],
         advanced: [
-          { prompt: "Một hộp có 4 bi đỏ, 6 bi xanh. Lấy liên tiếp 2 bi không hoàn lại, tính xác suất cả 2 bi cùng màu.", solution: "P(2 đỏ) = (4/10)×(3/9) = 12/90.\nP(2 xanh) = (6/10)×(5/9) = 30/90.\nP(cùng màu) = 12/90+30/90 = 42/90 = 7/15.", answer: "7/15" },
-          { prompt: "Gieo 2 xúc xắc, tính xác suất tổng 2 mặt là số nguyên tố.", solution: "Các tổng nguyên tố có thể: 2,3,5,7,11.\nSố cách: tổng=2 (1cách), 3 (2cách), 5 (4cách), 7 (6cách), 11 (2cách). Tổng cộng 15 cách trong 36.\nXác suất = 15/36 = 5/12.", answer: "5/12" },
-          { prompt: "Xác suất một học sinh thi đỗ môn Toán là 0,8 và môn Văn là 0,7 (độc lập). Tính xác suất học sinh đó đỗ cả hai môn.", solution: "P(đỗ cả 2 môn) = 0,8×0,7 = 0,56.", answer: "0,56" },
+          { prompt: "Gieo đồng thời 2 xúc xắc. Tính xác suất để hiệu (số lớn trừ số nhỏ) giữa hai mặt bằng 2.", solution: "Các cặp (a,b) thỏa |a-b|=2: (1,3),(3,1),(2,4),(4,2),(3,5),(5,3),(4,6),(6,4) → 8 cặp trong 36.\nXác suất = 8/36 = 2/9.", answer: "2/9" },
+          { prompt: "Một hộp có 10 thẻ đánh số từ 1 đến 10. Rút ngẫu nhiên 2 thẻ. Tính xác suất để tổng hai số trên thẻ là số nguyên tố.", solution: "Liệt kê các cặp có tổng là số nguyên tố (3,5,7,11,13,17,19):\nTổng=3: 1 cặp. =5: 2 cặp. =7: 3 cặp. =11: 5 cặp. =13: 4 cặp. =17: 2 cặp. =19: 1 cặp.\nTổng cộng = 1+2+3+5+4+2+1 = 18 cặp trong C(10,2)=45.\nXác suất = 18/45 = 2/5.", answer: "2/5" },
+          { prompt: "Một lớp có 20 nam, 15 nữ. Chọn ngẫu nhiên 1 ban cán sự gồm 2 người. Tính xác suất ban cán sự có cả nam và nữ.", solution: "Tổng số cách chọn 2 người từ 35: C(35,2)=595.\nSố cách chọn 1 nam và 1 nữ: 20×15=300.\nXác suất = 300/595 = 60/119.", answer: "60/119" },
         ],
       },
       {
@@ -1351,9 +1351,9 @@ const GRADES = [
           { prompt: "Tam giác ABC~A'B'C' theo tỉ số k=2/5. Biết AC=10cm. Tính A'C'.", solution: "A'C' = k×AC = 2/5×10 = 4cm.", answer: "4cm" },
         ],
         advanced: [
-          { prompt: "Tam giác ABC vuông tại A, đường cao AH, BH=3,6cm, BC=10cm. Chứng minh AB²=BH×BC rồi tính AB.", solution: "Tam giác ABH đồng dạng tam giác CBA (góc B chung, góc AHB=góc CAB=90°).\nSuy ra AB/CB=BH/BA → AB²=BH×BC=3,6×10=36 → AB=6cm.", answer: "6cm" },
-          { prompt: "Hai tam giác đồng dạng có hiệu hai cạnh tương ứng là 4cm và tỉ số đồng dạng 3/5. Tìm độ dài hai cạnh đó.", solution: "Gọi cạnh nhỏ x, cạnh lớn y: x/y=3/5 → x=3y/5. Và y-x=4.\ny-3y/5=4 → 2y/5=4 → y=10cm, x=6cm.", answer: "6cm" },
-          { prompt: "Tam giác ABC có đường trung bình MN (M, N là trung điểm AB, AC). Biết diện tích ABC là 80cm², tính diện tích AMN.", solution: "Tam giác AMN đồng dạng tam giác ABC theo tỉ số 1/2 (MN là đường trung bình).\nTỉ số diện tích = (1/2)²=1/4. Diện tích AMN = 80/4 = 20cm².", answer: "20cm²" },
+          { prompt: "Tam giác ABC vuông tại A, đường cao AH. Biết AB=6cm, AH=4,8cm. Tính AC.", solution: "Từ Pytago trong tam giác vuông ABH: BH=√(AB²-AH²)=√(36-23,04)=√12,96=3,6cm.\nTam giác ABH đồng dạng CBA (góc B chung, góc vuông): AH/CA=BH/AB.\nCA = AH×AB/BH = 4,8×6/3,6 = 8cm.", answer: "8cm" },
+          { prompt: "Hai tam giác đồng dạng có tỉ số chu vi 3:5. Biết hiệu diện tích hai tam giác là 32cm². Tính diện tích mỗi tam giác.", solution: "Tỉ số đồng dạng = 3:5, tỉ số diện tích = 9:25.\nĐặt diện tích tam giác nhỏ = 9k, lớn = 25k. Hiệu = 25k-9k=16k=32 → k=2.\nDiện tích nhỏ = 18cm², diện tích lớn = 50cm².", answer: "18cm² và 50cm²" },
+          { prompt: "Tam giác ABC, D thuộc AB, E thuộc AC sao cho DE//BC. Biết diện tích tam giác ADE bằng 1/4 diện tích tứ giác DECB. Tính tỉ số AD/AB.", solution: "S_ADE + S_DECB = S_ABC. Nếu S_ADE=1/4×S_DECB thì S_DECB=4×S_ADE, nên S_ABC=S_ADE+4S_ADE=5S_ADE.\nTỉ số S_ADE/S_ABC=1/5. Vì ADE đồng dạng ABC, tỉ số diện tích bằng bình phương tỉ số đồng dạng: (AD/AB)²=1/5.\nAD/AB = 1/√5 = √5/5.", answer: "√5/5" },
         ],
       },
     ],
@@ -1389,9 +1389,9 @@ const GRADES = [
           { prompt: "Hai số có tổng 24, một số gấp đôi số kia. Tìm hai số đó.", solution: "Gọi số nhỏ là x, số lớn là 2x. x+2x=24 → 3x=24 → x=8.\nHai số cần tìm là 8 và 16.", answer: "Hai số cần tìm là 8 và 16" },
         ],
         advanced: [
-          { prompt: "Tìm m để hệ phương trình mx+y=3 và x+my=3 có nghiệm duy nhất.", solution: "Hệ có nghiệm duy nhất khi định thức khác 0: m×m − 1×1 ≠ 0 → m² ≠ 1 → m ≠ 1 và m ≠ -1.", answer: "m×m − 1×1 ≠ 0 → m² ≠ 1 → m ≠ 1 và m ≠ -1" },
-          { prompt: "Giải hệ: 2/x + 3/y = 5 và 3/x − 1/y = 2 (đặt ẩn phụ u=1/x, v=1/y).", solution: "Đặt u=1/x, v=1/y, hệ trở thành: 2u+3v=5; 3u-v=2.\nTừ pt2: v=3u-2. Thay vào pt1: 2u+3(3u-2)=5 → 2u+9u-6=5 → 11u=11 → u=1.\nSuy ra v=3(1)-2=1.\nVậy x=1/u=1, y=1/v=1.", answer: "1" },
-          { prompt: "Tìm giá trị nguyên của m để hệ x+y=m; x−y=m−2 có nghiệm là số nguyên dương.", solution: "Cộng hai phương trình: 2x=2m-2 → x=m-1.\nThay vào: y=m-x=m-(m-1)=1.\nCần x>0: m-1>0 → m>1. Vì m nguyên nên m≥2 (khi đó x=m-1≥1>0, y=1>0 luôn thỏa).", answer: "1>0 luôn thỏa)" },
+          { prompt: "Tìm hai số biết hiệu của chúng là 12, và ba lần số thứ nhất cộng hai lần số thứ hai bằng 61.", solution: "Gọi số thứ nhất là x, số thứ hai là y: x-y=12, 3x+2y=61.\nTừ pt1: x=y+12. Thay vào pt2: 3(y+12)+2y=61 → 5y+36=61 → 5y=25 → y=5, x=17.", answer: "17 và 5" },
+          { prompt: "Một hình chữ nhật có chu vi 64cm. Nếu tăng một cạnh thêm 4cm và giảm cạnh kia đi 4cm thì diện tích không đổi. Tính hai kích thước ban đầu.", solution: "Gọi hai cạnh là a, b: a+b=32.\n(a+4)(b-4)=ab → ab-4a+4b-16=ab → -4a+4b=16 → b-a=4.\nKết hợp a+b=32, b-a=4: b=18, a=14.", answer: "14cm và 18cm" },
+          { prompt: "Hai vòi nước cùng chảy vào bể thì sau 4 giờ đầy bể. Nếu chảy riêng, vòi 1 nhanh hơn vòi 2 đúng 6 giờ. Hỏi mỗi vòi chảy riêng mất bao lâu để đầy bể?", solution: "Gọi thời gian vòi 1 chảy riêng là x giờ, vòi 2 là x+6 giờ.\nNăng suất cộng lại: 1/x + 1/(x+6) = 1/4.\nQuy đồng: 4(2x+6)=x(x+6) → 8x+24=x²+6x → x²-2x-24=0 → (x-6)(x+4)=0 → x=6 (loại x=-4).\nVòi 1 mất 6 giờ, vòi 2 mất 12 giờ.", answer: "vòi 1: 6 giờ, vòi 2: 12 giờ" },
         ],
       },
       {
@@ -1418,9 +1418,9 @@ const GRADES = [
           { prompt: "Giải bất phương trình: −3x+6 > 0", solution: "-3x > -6.\nx < 2 (chia cho số âm thì đổi chiều).", answer: "x < 2 (chia cho số âm thì đổi chiều)" },
         ],
         advanced: [
-          { prompt: "Giải và biện luận theo m: (m−1)x = m²−1", solution: "Nếu m≠1: chia 2 vế cho (m-1): x = (m²-1)/(m-1) = (m-1)(m+1)/(m-1) = m+1.\nNếu m=1: phương trình trở thành 0x=0, đúng với mọi x (vô số nghiệm).", answer: "0, đúng với mọi x (vô số nghiệm)" },
-          { prompt: "Tìm x nguyên thỏa mãn đồng thời: 2x−1<7 và 3x+2>x−4", solution: "BPT 1: 2x<8 → x<4.\nBPT 2: 2x>-6 → x>-3.\nVậy -3<x<4. Các giá trị x nguyên: -2,-1,0,1,2,3.", answer: "-2,-1,0,1,2,3" },
-          { prompt: "Giải bất phương trình chứa dấu giá trị tuyệt đối: |x−3| < 5", solution: "|x-3|<5 tương đương -5<x-3<5.\nCộng 3 vào cả 3 vế: -2<x<8.", answer: "Cộng 3 vào cả 3 vế: -2<x<8" },
+          { prompt: "Giải phương trình: |2x−1| = |x+4|", solution: "Trường hợp 1: 2x-1=x+4 → x=5.\nTrường hợp 2: 2x-1=-(x+4) → 2x-1=-x-4 → 3x=-3 → x=-1.\nVậy x=5 hoặc x=-1.", answer: "x=5 hoặc x=-1" },
+          { prompt: "Giải và biện luận phương trình: mx − 2 = x + m theo tham số m.", solution: "mx-x = m+2 → x(m-1) = m+2.\nNếu m≠1: x=(m+2)/(m-1).\nNếu m=1: phương trình trở thành 0=3, vô nghiệm.", answer: "x=(m+2)/(m-1) khi m≠1; vô nghiệm khi m=1" },
+          { prompt: "Tìm m để bất phương trình (m−2)x > 3 có tập nghiệm x < 3/(m−2). Với m=0, giải cụ thể bất phương trình.", solution: "Khi chia hai vế cho (m-2), bất đẳng thức đổi chiều nếu (m-2) âm, tức cần m<2.\nVới m=0: (0-2)x>3 → -2x>3 → x<-3/2 (chia cho số âm nên đổi chiều).", answer: "m<2; với m=0: x<-3/2" },
         ],
       },
       {
@@ -1447,9 +1447,9 @@ const GRADES = [
           { prompt: "Rút gọn: √20 + √45", solution: "√20=2√5, √45=3√5.\nTổng = 2√5+3√5 = 5√5.", answer: "5√5" },
         ],
         advanced: [
-          { prompt: "Rút gọn biểu thức: (√5−1)² + (√5+1)²", solution: "(√5-1)² = 5-2√5+1 = 6-2√5.\n(√5+1)² = 5+2√5+1 = 6+2√5.\nTổng = (6-2√5)+(6+2√5) = 12.", answer: "12" },
-          { prompt: "Tìm x biết: √(x−2) = 3", solution: "Bình phương hai vế: x-2 = 9 → x=11.\nKiểm tra điều kiện x≥2: 11≥2, thỏa mãn.", answer: "Kiểm tra điều kiện x≥2: 11≥2, thỏa mãn" },
-          { prompt: "Tính giá trị biểu thức B = √(3−2√2)", solution: "Nhận xét: 3-2√2 = 2-2√2+1 = (√2)²-2√2+1² = (√2-1)².\nVì √2>1 nên √2-1>0, do đó B = √((√2-1)²) = √2-1.", answer: "√2-1" },
+          { prompt: "Rút gọn: √(7+4√3) (gợi ý: 7+4√3 là bình phương của một biểu thức dạng a+b√3).", solution: "7+4√3 = 4+4√3+3 = 2²+2×2×√3+(√3)² = (2+√3)².\nVậy √(7+4√3) = 2+√3 (vì 2+√3>0).", answer: "2+√3" },
+          { prompt: "Tính: (√5−2)(√5+2) + (√3−1)²", solution: "(√5-2)(√5+2) = 5-4 = 1.\n(√3-1)² = 3-2√3+1 = 4-2√3.\nTổng = 1+4-2√3 = 5-2√3.", answer: "5-2√3" },
+          { prompt: "Chứng minh: 1/(√1+√2) + 1/(√2+√3) + ... + 1/(√99+√100) = 9 (gợi ý: trục căn thức từng số hạng).", solution: "Mỗi số hạng 1/(√n+√(n+1)), nhân liên hợp với (√(n+1)-√n): = √(n+1)-√n (vì mẫu trở thành (n+1)-n=1).\nTổng = (√2-√1)+(√3-√2)+...+(√100-√99) = √100-√1 = 10-1 = 9 (các số hạng giữa triệt tiêu nhau).", answer: "9" },
         ],
       },
       {
@@ -1476,9 +1476,9 @@ const GRADES = [
           { prompt: "Cho tam giác vuông có tanα=3/4. Tính sinα, cosα.", solution: "Dùng tam giác đồng dạng 3-4-5: sinα=3/5, cosα=4/5.", answer: "4/5" },
         ],
         advanced: [
-          { prompt: "Tam giác ABC vuông tại A, đường cao AH. Biết BH=4cm, CH=9cm. Tính AH, AB, AC.", solution: "AH² = BH×CH = 4×9 = 36 → AH=6cm.\nBC = BH+CH = 13cm.\nAB² = BH×BC = 4×13 = 52 → AB=√52=2√13cm.\nAC² = CH×BC = 9×13 = 117 → AC=√117=3√13cm.", answer: "3√13cm" },
-          { prompt: "Tam giác ABC vuông tại A có AB=3, AC=4. Tính khoảng cách từ A đến BC.", solution: "BC = √(3²+4²) = 5 (Pytago).\nKhoảng cách từ A đến BC chính là đường cao AH = (AB×AC)/BC = 12/5 = 2,4cm.", answer: "2,4cm" },
-          { prompt: "Cho tam giác vuông có hai góc nhọn α và β phụ nhau (α+β=90°). Biết sinα=0,6. Tính cosβ.", solution: "Vì α+β=90° nên β=90°-α.\ncosβ = cos(90°-α) = sinα = 0,6 (tính chất góc phụ nhau).", answer: "0,6 (tính chất góc phụ nhau)" },
+          { prompt: "Tam giác ABC vuông tại A, đường cao AH. Biết AB:AC=3:4, BC=15cm. Tính AH.", solution: "Đặt AB=3k, AC=4k. Theo Pytago: BC²=AB²+AC²=9k²+16k²=25k²=225 → k=3.\nAB=9cm, AC=12cm.\nAH = (AB×AC)/BC = (9×12)/15 = 7,2cm.", answer: "7,2cm" },
+          { prompt: "Tam giác ABC vuông tại A, góc B=30°, đường cao AH=6cm. Tính BC.", solution: "Trong tam giác vuông ABH (vuông tại H): AB = AH/sinB = 6/0,5 = 12cm.\nTrong tam giác ABC: BC = AB/cosB = 12/(√3/2) = 24/√3 = 8√3cm.", answer: "8√3cm" },
+          { prompt: "Tam giác ABC vuông tại A, phân giác góc A cắt BC tại D. Biết AB=6cm, AC=8cm. Tính BD, DC.", solution: "Theo tính chất đường phân giác: BD/DC=AB/AC=6/8=3/4.\nBC=√(36+64)=10cm.\nBD+DC=10 và BD/DC=3/4: BD=30/7cm, DC=40/7cm.", answer: "BD=30/7cm, DC=40/7cm" },
         ],
       },
       {
@@ -1505,9 +1505,9 @@ const GRADES = [
           { prompt: "Đường tròn có chu vi 31,4cm (π≈3,14). Tính bán kính.", solution: "R = chu vi/(2π) = 31,4/6,28 = 5cm.", answer: "5cm" },
         ],
         advanced: [
-          { prompt: "Cho đường tròn (O;R) và dây AB=R√3. Tính khoảng cách từ O đến AB.", solution: "Nửa dây = R√3/2.\nd² = R² - (R√3/2)² = R² - 3R²/4 = R²/4.\nd = R/2.", answer: "R/2" },
-          { prompt: "Hai đường tròn (O;5cm) và (O';3cm) có OO'=4cm. Xác định vị trí tương đối của chúng.", solution: "So sánh: |5-3|=2 < 4 < 5+3=8.\nVì 4 nằm giữa 2 và 8, hai đường tròn cắt nhau (tại 2 điểm).", answer: "2 đ" },
-          { prompt: "Hai tiếp tuyến tại A và B của đường tròn (O;R) cắt nhau tại M, biết góc AMB=60°. Tính góc AOB.", solution: "Tứ giác OAMB có góc OAM = góc OBM = 90° (tiếp tuyến vuông góc bán kính tại tiếp điểm).\nTổng 4 góc tứ giác = 360°, nên góc AOB = 360°-90°-90°-60° = 120°.", answer: "120°" },
+          { prompt: "Cho đường tròn (O;R). Hai dây AB, CD vuông góc với nhau tại điểm I nằm trong đường tròn. Biết IA=3cm, IB=5cm, IC=2cm. Tính ID (dùng tính chất IA×IB=IC×ID).", solution: "Theo tính chất phương tích của điểm nằm trong đường tròn: IA×IB=IC×ID.\n3×5=2×ID → ID=7,5cm.", answer: "7,5cm" },
+          { prompt: "Từ điểm M ở ngoài đường tròn (O;R) kẻ hai tiếp tuyến MA, MB. Biết OM=13cm, R=5cm. Tính diện tích tứ giác OAMB.", solution: "MA=√(OM²-R²)=√(169-25)=√144=12cm (do tam giác OAM vuông tại A).\nDiện tích OAMB = 2×diện tích tam giác OAM = 2×(½×OA×MA) = OA×MA = 5×12 = 60cm².", answer: "60cm²" },
+          { prompt: "Cho đường tròn (O;R) và điểm A nằm ngoài với OA=2R. Từ A kẻ tiếp tuyến AB (B là tiếp điểm). Tính góc AOB và độ dài AB theo R.", solution: "Tam giác OAB vuông tại B (tiếp tuyến vuông góc bán kính). cos(AOB)=OB/OA=R/2R=1/2 → góc AOB=60°.\nAB=√(OA²-OB²)=√(4R²-R²)=R√3.", answer: "góc AOB=60°, AB=R√3" },
         ],
       },
       {
@@ -1534,9 +1534,9 @@ const GRADES = [
           { prompt: "Giải phương trình: x²+5x+6=0", solution: "Phân tích: (x+2)(x+3)=0.\nx=-2 hoặc x=-3.", answer: "-3" },
         ],
         advanced: [
-          { prompt: "Cho phương trình x²−2(m−1)x+m−3=0. Tìm m để phương trình có 2 nghiệm trái dấu.", solution: "Hai nghiệm trái dấu khi tích hai nghiệm âm: c/a = m-3 < 0 → m < 3.", answer: "m-3 < 0 → m < 3" },
-          { prompt: "Tìm m để phương trình x²−mx+m−1=0 có nghiệm kép, và tính nghiệm đó.", solution: "Δ = m²-4(m-1) = m²-4m+4 = (m-2)² = 0 → m=2.\nNghiệm kép: x = m/2 = 1.", answer: "1" },
+          { prompt: "Cho phương trình x²−2(m−1)x+m−3=0. Tìm m để phương trình có 2 nghiệm trái dấu.", solution: "Hai nghiệm trái dấu khi tích hai nghiệm âm: theo Vi-ét, tích = c/a = m-3 < 0 → m<3.", answer: "m<3" },
           { prompt: "Cho x₁, x₂ là hai nghiệm của phương trình x²−5x+3=0. Tính x₁²+x₂².", solution: "Theo Vi-ét: x₁+x₂=5, x₁×x₂=3.\nx₁²+x₂² = (x₁+x₂)²-2x₁x₂ = 25-6 = 19.", answer: "19" },
+          { prompt: "Tìm m để phương trình x²+(2m−1)x+m²−1=0 có hai nghiệm x₁, x₂ thỏa x₁²+x₂²=11.", solution: "Điều kiện có nghiệm: Δ=(2m-1)²-4(m²-1)=-4m+5≥0 → m≤5/4.\nTheo Vi-ét: x₁+x₂=1-2m, x₁x₂=m²-1.\nx₁²+x₂²=(x₁+x₂)²-2x₁x₂=(1-2m)²-2(m²-1)=2m²-4m+3.\nGiải: 2m²-4m+3=11 → m²-2m-4=0 → m=1±√5.\nĐối chiếu điều kiện m≤5/4: chỉ m=1-√5 thỏa mãn.", answer: "m=1-√5" },
         ],
       },
       {
@@ -1563,9 +1563,9 @@ const GRADES = [
           { prompt: "Một lớp 50 học sinh, 12 bạn đạt điểm khá. Tính tần số tương đối của điểm khá.", solution: "Tần số tương đối = 12/50 = 0,24 = 24%.", answer: "24%" },
         ],
         advanced: [
-          { prompt: "Bảng tần số có tổng tần số 60, giá trị A có tần số tương đối 15%, giá trị B có tần số gấp đôi tần số của A. Tính tần số của B.", solution: "Tần số của A = 60×15% = 9.\nTần số của B = 2×9 = 18.", answer: "18" },
-          { prompt: "Lớp 9A (40 học sinh) có tần số tương đối học sinh giỏi là 25%. Lớp 9B (35 học sinh) có 12 học sinh giỏi. Lớp nào có tỉ lệ học sinh giỏi cao hơn?", solution: "9A: tỉ lệ = 25%.\n9B: tỉ lệ = 12/35 ≈ 34,3%.\nVậy lớp 9B có tỉ lệ học sinh giỏi cao hơn.", answer: "lớp 9B có tỉ lệ học sinh giỏi cao hơn" },
-          { prompt: "Một bảng tần số có 5 giá trị, tần số tương đối lần lượt là 10%, 15%, 25%, x%, 20%. Tìm x.", solution: "Tổng các tần số tương đối = 100%: 10+15+25+x+20=100 → x=30.", answer: "30" },
+          { prompt: "Một lớp có điểm kiểm tra với tần số: điểm 5 (2 bạn), điểm 6 (x bạn), điểm 7 (10 bạn), điểm 8 (y bạn), điểm 9 (3 bạn), tổng cộng 30 học sinh. Biết tần số điểm 6 gấp đôi tần số điểm 8. Tìm x, y.", solution: "2+x+10+y+3=30 → x+y=15.\nVì tần số điểm 6 gấp đôi điểm 8: x=2y.\nThay vào: 2y+y=15 → y=5, x=10.", answer: "x=10, y=5" },
+          { prompt: "Khảo sát 200 người: tần số tương đối thích Toán là 35%, thích Anh là 40%, thích cả hai môn là 15%. Hỏi có bao nhiêu người không thích môn nào trong hai môn đó?", solution: "Tỉ lệ thích ít nhất 1 môn = 35%+40%-15% = 60%.\nTỉ lệ không thích môn nào = 100%-60% = 40%.\nSố người = 200×40% = 80 người.", answer: "80 người" },
+          { prompt: "Một bảng tần số có 3 nhóm với tần số tương đối theo tỉ lệ 1:2:4 (nhóm sau gấp đôi nhóm trước). Tính tần số tương đối mỗi nhóm (làm tròn 2 chữ số thập phân sau dấu phẩy, tính theo %).", solution: "Tổng số phần = 1+2+4 = 7. Mỗi phần ứng với 100%/7 ≈ 14,29%.\nNhóm 1 ≈ 14,29%. Nhóm 2 ≈ 28,57%. Nhóm 3 ≈ 57,14%.", answer: "≈14,29%; 28,57%; 57,14%" },
         ],
       },
       {
@@ -1592,9 +1592,9 @@ const GRADES = [
           { prompt: "Một hộp có 6 thẻ đánh số 1-6. Lấy 1 thẻ, tính xác suất được số nguyên tố.", solution: "Các số nguyên tố trong 1-6: 2,3,5 → 3 kết quả.\nXác suất = 3/6 = 1/2.", answer: "1/2" },
         ],
         advanced: [
-          { prompt: "Một hộp có 3 bi đỏ, 4 bi xanh, 5 bi vàng. Lấy ngẫu nhiên 2 bi cùng lúc, tính xác suất cả 2 bi đều màu đỏ.", solution: "Tổng số bi = 12. Số cách lấy 2 bi bất kỳ: C(12,2)=66.\nSố cách lấy 2 bi đỏ: C(3,2)=3.\nXác suất = 3/66 = 1/22.", answer: "1/22" },
-          { prompt: "Gieo đồng thời 2 xúc xắc, tính xác suất tích hai số chấm là số chẵn.", solution: "Tích chẵn xảy ra khi ít nhất một số chấm chẵn.\nP(cả 2 đều lẻ) = (3/6)×(3/6) = 1/4.\nP(tích chẵn) = 1 - 1/4 = 3/4.", answer: "3/4" },
-          { prompt: "Một túi có n bi đỏ và 5 bi xanh. Biết xác suất lấy được bi đỏ là 3/8. Tìm n.", solution: "n/(n+5) = 3/8 → 8n = 3(n+5) = 3n+15 → 5n=15 → n=3.", answer: "3" },
+          { prompt: "Gieo 1 xúc xắc 3 lần liên tiếp. Tính xác suất để tổng 3 lần gieo bằng 5.", solution: "Cần đếm số bộ ba số nguyên dương (a,b,c), mỗi số từ 1-6, có tổng bằng 5.\nĐặt a'=a-1,b'=b-1,c'=c-1 (không âm), a'+b'+c'=2: số nghiệm không âm = C(2+2,2)=6 (không cần trừ vượt quá 6 vì tổng chỉ 2).\nKhông gian mẫu = 6³=216.\nXác suất = 6/216 = 1/36.", answer: "1/36" },
+          { prompt: "Một hộp có 3 bi đỏ, 2 bi xanh. Lấy lần lượt (không hoàn lại) 2 bi. Tính xác suất bi thứ hai là màu đỏ.", solution: "P(bi2 đỏ) = P(bi1 đỏ)×P(bi2 đỏ|bi1 đỏ) + P(bi1 xanh)×P(bi2 đỏ|bi1 xanh)\n= (3/5)×(2/4) + (2/5)×(3/4) = 6/20+6/20 = 12/20 = 3/5.\n(Thú vị: kết quả bằng đúng xác suất bi thứ nhất là đỏ, dù chưa biết kết quả bi 1!)", answer: "3/5" },
+          { prompt: "Một bộ bài 52 lá có 4 lá Át. Rút ngẫu nhiên 3 lá liên tiếp (không hoàn lại). Tính xác suất trong 3 lá đó có đúng 1 lá Át.", solution: "Số cách chọn 1 Át (trong 4) và 2 lá không phải Át (trong 48): C(4,1)×C(48,2) = 4×1128 = 4512.\nTổng số cách chọn 3 lá từ 52: C(52,3)=22100.\nXác suất = 4512/22100 = 1128/5525 (đã rút gọn).", answer: "1128/5525" },
         ],
       },
       {
@@ -1621,9 +1621,9 @@ const GRADES = [
           { prompt: "Hình vuông nội tiếp đường tròn bán kính 5cm. Tính độ dài cạnh hình vuông (cạnh×√2=đường kính).", solution: "Đường kính = 10cm.\nCạnh = 10/√2 = 5√2 ≈ 7,07cm.", answer: "5√2 ≈ 7,07cm" },
         ],
         advanced: [
-          { prompt: "Lục giác đều nội tiếp đường tròn bán kính R. Tính độ dài cạnh lục giác theo R.", solution: "Tính chất đặc biệt: lục giác đều nội tiếp đường tròn có cạnh bằng đúng bán kính đường tròn đó.\nCạnh = R.", answer: "R" },
-          { prompt: "Tam giác ABC nội tiếp đường tròn (O), biết góc A=70°, góc B=50°. Tính góc ở tâm chắn cung BC.", solution: "Góc nội tiếp chắn cung BC chính là góc A = 70°.\nGóc ở tâm chắn cùng cung BC gấp đôi góc nội tiếp: góc ở tâm = 2×70° = 140°.", answer: "140°" },
-          { prompt: "Tứ giác ABCD nội tiếp có tỉ lệ góc A : góc C = 2 : 3. Tính góc A và góc C.", solution: "Vì tứ giác nội tiếp: góc A + góc C = 180°.\nChia theo tỉ lệ 2:3 (tổng 5 phần): góc A = 180°×2/5 = 72°.\ngóc C = 180°×3/5 = 108°.", answer: "108°" },
+          { prompt: "Tam giác đều nội tiếp đường tròn bán kính R. Tính diện tích tam giác theo R.", solution: "Cạnh tam giác đều nội tiếp đường tròn bán kính R là a=R√3.\nDiện tích tam giác đều cạnh a: S=a²√3/4 = (R√3)²√3/4 = 3R²√3/4.", answer: "3R²√3/4" },
+          { prompt: "Tứ giác ABCD nội tiếp đường tròn, biết góc A=(3x+10)°, góc C=(2x+20)°. Tìm x và tính góc A, góc C.", solution: "Vì tứ giác nội tiếp: góc A + góc C = 180°.\n(3x+10)+(2x+20)=180 → 5x+30=180 → x=30.\nGóc A=3(30)+10=100°. Góc C=2(30)+20=80°.", answer: "x=30; góc A=100°, góc C=80°" },
+          { prompt: "Tam giác ABC nội tiếp đường tròn (O;R), biết BC=R√3. Tính góc A (góc nội tiếp chắn cung BC).", solution: "Theo định lý sin: BC/sinA=2R → sinA=BC/(2R)=R√3/(2R)=√3/2.\nVậy góc A=60° hoặc góc A=120° (tùy vị trí tam giác trên đường tròn).", answer: "60° hoặc 120°" },
         ],
       },
       {
@@ -1688,9 +1688,9 @@ const GRADES = [
           { prompt: "Cho A={x∈ℝ | x²=4}. Liệt kê các phần tử của A.", solution: "x²=4 → x=±2. Vậy A={-2;2}.", answer: "{-2;2}" },
         ],
         advanced: [
-          { prompt: "Cho A=(−∞;3], B=[1;5). Tìm A∩B và A∪B dưới dạng khoảng.", solution: "A∩B = [1;3] (phần giao, lấy điều kiện chặt hơn ở mỗi đầu).\nA∪B = (-∞;5) (phần hợp, lấy điều kiện rộng hơn ở mỗi đầu).", answer: "5" },
-          { prompt: "Tìm tập hợp các giá trị x làm mệnh đề chứa biến P(x): \"x²−5x+6=0\" trở thành mệnh đề đúng.", solution: "Giải x²-5x+6=0 → x=2 hoặc x=3.\nTập hợp các giá trị đó là {2;3}.", answer: "Tập hợp các giá trị đó là {2;3}" },
-          { prompt: "Cho |A|=15, |B|=20, |A∩B|=8. Tính |A∪B|.", solution: "Công thức: |A∪B| = |A|+|B|-|A∩B| = 15+20-8 = 27.", answer: "27" },
+          { prompt: "Cho A={x∈ℤ | −3≤x≤5}, B={x∈ℤ | x²≤9}. Tìm A∩B và A\\B.", solution: "A={-3,-2,-1,0,1,2,3,4,5}. B: x²≤9 ⟺ -3≤x≤3, nên B={-3,-2,-1,0,1,2,3}.\nA∩B = B = {-3,-2,-1,0,1,2,3}.\nA\\B (phần tử thuộc A nhưng không thuộc B) = {4,5}.", answer: "A∩B={-3,...,3}; A\\B={4,5}" },
+          { prompt: "Chứng minh: với mọi số nguyên n, nếu n² chia hết cho 3 thì n chia hết cho 3.", solution: "Chứng minh phản chứng: giả sử n không chia hết cho 3, tức n=3k+1 hoặc n=3k-1 (k nguyên).\nNếu n=3k+1: n²=9k²+6k+1=3(3k²+2k)+1, chia 3 dư 1.\nNếu n=3k-1: n²=9k²-6k+1=3(3k²-2k)+1, chia 3 dư 1.\nCả hai trường hợp n² đều không chia hết cho 3, mâu thuẫn giả thiết. Vậy mệnh đề đúng.", answer: "Đúng (chứng minh bằng phản chứng)" },
+          { prompt: "Cho tập A có n phần tử. Biết số tập con có đúng 2 phần tử của A là 15. Tìm n.", solution: "Số tập con 2 phần tử = C(n,2) = n(n-1)/2 = 15 → n(n-1)=30.\nVì 6×5=30, nên n=6.", answer: "6" },
         ],
       },
       {
@@ -1717,9 +1717,9 @@ const GRADES = [
           { prompt: "Tìm giao điểm của parabol y=x² với đường thẳng y=x+2.", solution: "x² = x+2 → x²-x-2=0 → (x-2)(x+1)=0 → x=2 hoặc x=-1.\nTại x=2: y=4. Tại x=-1: y=1.\nGiao điểm: (2;4) và (-1;1).", answer: "Giao điểm: (2;4) và (-1;1)" },
         ],
         advanced: [
-          { prompt: "Tìm m để hàm số y=(m−2)x²+3x−1 là hàm số bậc hai có đồ thị quay bề lõm xuống.", solution: "Cần hệ số bậc 2 âm: m-2<0 → m<2 (và m≠2 để là hàm bậc hai, tự động thỏa khi m<2).", answer: "2" },
-          { prompt: "Cho parabol y=ax²+bx+c đi qua 3 điểm (0,1), (1,0), (2,3). Tìm a, b, c.", solution: "Từ (0,1): c=1.\nTừ (1,0): a+b+c=0 → a+b=-1.\nTừ (2,3): 4a+2b+c=3 → 4a+2b=2 → 2a+b=1.\nTrừ hai phương trình: (2a+b)-(a+b)=1-(-1) → a=2. Suy ra b=-3.\nVậy a=2, b=-3, c=1.", answer: "1" },
-          { prompt: "Tìm tọa độ giao điểm của parabol y=x²−4x+3 với đường thẳng y=2x−5.", solution: "x²-4x+3 = 2x-5 → x²-6x+8=0 → (x-2)(x-4)=0 → x=2 hoặc x=4.\nTại x=2: y=-1. Tại x=4: y=3.\nGiao điểm: (2;-1) và (4;3).", answer: "Giao điểm: (2;-1) và (4;3)" },
+          { prompt: "Tìm m để phương trình x²−2mx+m²−1=0 có 2 nghiệm x₁,x₂ sao cho x₁³+x₂³=8 (dùng Vi-ét, không giải trực tiếp).", solution: "Theo Vi-ét: x₁+x₂=2m, x₁x₂=m²-1.\nx₁³+x₂³=(x₁+x₂)³-3x₁x₂(x₁+x₂)=(2m)³-3(m²-1)(2m)=8m³-6m³+6m=2m³+6m.\nĐặt bằng 8: 2m³+6m=8 → m³+3m-4=0 → (m-1)(m²+m+4)=0.\nVì m²+m+4>0 với mọi m (Δ<0), nghiệm duy nhất là m=1.", answer: "1" },
+          { prompt: "Cho hàm số y=x²−4x+3. Tìm điểm trên đồ thị có tung độ nhỏ nhất, và tính khoảng cách từ điểm đó đến trục hoành.", solution: "Đỉnh parabol tại x=-b/2a=2, y=4-8+3=-1. Điểm đó là (2;-1).\nKhoảng cách đến trục hoành = |-1| = 1.", answer: "1" },
+          { prompt: "Chứng minh parabol y=x²−2mx+m²−1 luôn cắt trục hoành tại 2 điểm phân biệt với mọi giá trị m.", solution: "Δ' = m²-(m²-1) = 1 > 0 với mọi m.\nVì Δ'>0 luôn đúng, parabol luôn cắt trục hoành tại 2 điểm phân biệt với mọi m.", answer: "Δ'=1>0 với mọi m, luôn cắt tại 2 điểm phân biệt" },
         ],
       },
       {
@@ -1746,9 +1746,9 @@ const GRADES = [
           { prompt: "Cho hệ x≤5, y≤3, x≥0, y≥0. Tìm một điểm thuộc miền nghiệm.", solution: "Ví dụ điểm (2;1): thỏa mãn cả 4 điều kiện (2≤5, 1≤3, 2≥0, 1≥0).", answer: "0" },
         ],
         advanced: [
-          { prompt: "Một xưởng sản xuất 2 loại sản phẩm A, B. Mỗi sản phẩm A cần 2 giờ công, sản phẩm B cần 3 giờ công. Xưởng có tối đa 100 giờ công/ngày. Viết bất phương trình biểu diễn số sản phẩm A(x), B(y) có thể sản xuất.", solution: "2x+3y ≤ 100 (với điều kiện x≥0, y≥0).", answer: "2x+3y ≤ 100 (với điều kiện x≥0, y≥0)" },
-          { prompt: "Tìm giá trị lớn nhất của F=x+y trên miền nghiệm của hệ: x≥0, y≥0, x+2y≤6, 2x+y≤6.", solution: "Miền nghiệm là tứ giác với các đỉnh (0,0), (3,0), (2,2) (giao của x+2y=6 và 2x+y=6), (0,3).\nTính F tại từng đỉnh: (0,0)→0; (3,0)→3; (2,2)→4; (0,3)→3.\nGiá trị lớn nhất F=4, đạt tại (2,2).", answer: "4, đạt tại (2,2)" },
-          { prompt: "Mô tả miền nghiệm của hệ bất phương trình: x−y≥−2 và x+y≤4.", solution: "Đường thẳng x-y=-2 (qua (0,2) và (-2,0)): thay (0,0) được 0≥-2 đúng, nên miền nghiệm nằm về phía chứa gốc tọa độ.\nĐường thẳng x+y=4 (qua (4,0) và (0,4)): thay (0,0) được 0≤4 đúng, miền nghiệm cũng chứa gốc tọa độ.\nMiền nghiệm của hệ là giao của hai nửa mặt phẳng này, tạo thành một dải chứa gốc tọa độ.", answer: "4 đ" },
+          { prompt: "Tìm giá trị lớn nhất của F=3x+2y trên miền x≥0, y≥0, x+y≤4, x≤3.", solution: "Miền nghiệm là tứ giác có các đỉnh (0,0), (3,0), (3,1) (giao x=3 và x+y=4), (0,4).\nTính F tại từng đỉnh: (0,0)→0; (3,0)→9; (3,1)→11; (0,4)→8.\nGiá trị lớn nhất F=11, đạt tại (3,1).", answer: "11, đạt tại (3,1)" },
+          { prompt: "Một xưởng sản xuất 2 loại sản phẩm A (lãi 3 triệu/sp) và B (lãi 5 triệu/sp). Mỗi sp A cần 2 giờ máy, sp B cần 3 giờ máy (tối đa 12 giờ máy/ngày); mỗi sp cần 1 giờ nhân công (tối đa 5 giờ/ngày). Tìm số sản phẩm mỗi loại để lãi lớn nhất.", solution: "Gọi x, y là số sp A, B: 2x+3y≤12, x+y≤5, x,y≥0. Lãi L=3x+5y.\nCác đỉnh miền nghiệm: (0,0), (5,0), (3,2) (giao 2 đường ràng buộc), (0,4).\nTính L: (0,0)→0; (5,0)→15; (3,2)→19; (0,4)→20.\nLãi lớn nhất là 20 triệu, đạt khi chỉ sản xuất 4 sản phẩm B (x=0, y=4).", answer: "20 triệu, tại x=0, y=4" },
+          { prompt: "Miền nghiệm của hệ x≥0, y≥0, x+y≤4 là một tam giác. Tính diện tích tam giác đó.", solution: "Tam giác có 3 đỉnh (0,0), (4,0), (0,4).\nDiện tích = ½×4×4 = 8 (đơn vị diện tích).", answer: "8" },
         ],
       },
       {
@@ -1775,9 +1775,9 @@ const GRADES = [
           { prompt: "Tính giá trị biểu thức sin²30°+cos²30°.", solution: "Theo công thức lượng giác cơ bản sin²α+cos²α=1 với mọi α, nên kết quả bằng 1.", answer: "1 với mọi α, nên kết quả bằng 1" },
         ],
         advanced: [
-          { prompt: "Cho tanα=−2 với 90°<α<180°. Tính sinα và cosα.", solution: "Dùng 1+tan²α = 1/cos²α: 1+4=5=1/cos²α → cos²α=1/5.\nVì α là góc tù, cosα<0: cosα=-1/√5.\nsinα = tanα×cosα = (-2)×(-1/√5) = 2/√5.", answer: "2/√5" },
-          { prompt: "Tính giá trị biểu thức: sin30°×cos60° + cos30°×sin60°", solution: "= (1/2)×(1/2) + (√3/2)×(√3/2) = 1/4+3/4 = 1.\n(Đây thực chất là công thức sin(30°+60°)=sin90°=1.)", answer: "1.)" },
-          { prompt: "Kiểm tra công thức sin²α+cos²α=1 với α=45° bằng số cụ thể.", solution: "sin45°=cos45°=√2/2.\nsin²45°+cos²45° = (√2/2)²+(√2/2)² = 1/2+1/2 = 1. Đúng.", answer: "1. Đúng" },
+          { prompt: "Cho cosα=1/3 (0°<α<90°). Tính sin(2α).", solution: "sinα=√(1-1/9)=√(8/9)=2√2/3 (dương vì α nhọn).\nsin(2α)=2sinα·cosα=2×(2√2/3)×(1/3)=4√2/9.", answer: "4√2/9" },
+          { prompt: "Rút gọn: sin(180°−α) + cos(90°−α) − sin(90°+α)", solution: "sin(180°-α)=sinα. cos(90°-α)=sinα. sin(90°+α)=cosα.\nBiểu thức = sinα+sinα-cosα = 2sinα-cosα.", answer: "2sinα-cosα" },
+          { prompt: "Cho tanα=2. Tính giá trị biểu thức (sinα+cosα)/(sinα−cosα).", solution: "Chia cả tử và mẫu cho cosα (cosα≠0): = (tanα+1)/(tanα-1) = (2+1)/(2-1) = 3.", answer: "3" },
         ],
       },
       {
@@ -1804,9 +1804,9 @@ const GRADES = [
           { prompt: "Tìm tọa độ điểm D sao cho ABCD là hình bình hành, biết A(1,1), B(4,1), C(5,3).", solution: "Vì ABCD là hình bình hành nên vectơ AB=DC, suy ra D=A+C-B.\nD = (1+5-4; 1+3-1) = (2;3).", answer: "(2;3)" },
         ],
         advanced: [
-          { prompt: "Cho tam giác ABC, gọi G là trọng tâm. Giải thích vì sao vectơ GA+GB+GC = vectơ 0.", solution: "Đây là tính chất đặc trưng của trọng tâm tam giác: tổng ba vectơ từ trọng tâm đến ba đỉnh luôn triệt tiêu, bằng vectơ-không.", answer: "tổng ba vectơ từ trọng tâm đến ba đỉnh luôn triệt tiêu, bằng vectơ-không" },
-          { prompt: "Cho A(1,2), D(2,1), B(4,6). Biết ABCD là hình bình hành, tìm tọa độ C (dùng vectơ AB=DC).", solution: "Vectơ AB = (4-1;6-2) = (3;4).\nC = D + vectơ AB = (2+3;1+4) = (5;5).", answer: "(5;5)" },
-          { prompt: "Cho hai vectơ a=(3,4), b=(−4,3). Tính tích vô hướng a·b và kết luận về góc giữa chúng.", solution: "a·b = 3×(-4)+4×3 = -12+12 = 0.\nVì tích vô hướng bằng 0 nên hai vectơ vuông góc (góc giữa chúng bằng 90°).", answer: "90°" },
+          { prompt: "Cho tam giác ABC, M là điểm thỏa vectơ AM = (2/3)AB + (1/3)AC. Chứng tỏ M thuộc đoạn BC và tính tỉ số BM/MC.", solution: "Vì tổng hệ số 2/3+1/3=1 nên M nằm trên đường thẳng BC.\nViết dạng AM=(1-t)AB+tAC với t=1/3: M chia BC theo tỉ lệ BM:MC=t:(1-t)=1/3:2/3=1:2.", answer: "BM:MC=1:2" },
+          { prompt: "Cho hình bình hành ABCD, I là trung điểm CD. Biểu diễn vectơ AI theo hai vectơ AB và AD.", solution: "Trong hình bình hành ABCD: vectơ DC = vectơ AB.\nDI = ½DC = ½AB (I là trung điểm CD).\nAI = AD + DI = AD + ½AB.\nVậy vectơ AI = (1/2)AB + AD.", answer: "AI = (1/2)AB + AD" },
+          { prompt: "Cho 3 điểm A(1,2), B(4,0), C(−2,7). Tìm tọa độ điểm G sao cho vectơ GA+GB+GC=vectơ 0.", solution: "G thỏa điều kiện này chính là trọng tâm tam giác ABC.\nG = ((1+4-2)/3; (2+0+7)/3) = (1;3).", answer: "(1;3)" },
         ],
       },
       {
