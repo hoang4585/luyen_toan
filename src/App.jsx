@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 // Mật khẩu để mở khóa xem lời giải bài tập tự luyện.
 // Đổi chuỗi bên dưới để đặt mật khẩu khác.
-const SOLUTION_PASSWORD = "toanvietphap2026";
+const SOLUTION_PASSWORD = "vuihoc";
 
 // So sánh đáp số của học sinh với đáp án chuẩn — chấp nhận sai khác nhỏ
 // về khoảng trắng, hoa/thường, dấu chấm cuối câu.
